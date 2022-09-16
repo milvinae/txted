@@ -1,0 +1,1684 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title>Creating the Meta economy on StarkNet with @aspectdotco</title>
+	<meta name="generator" content="LibreOffice 7.3.5.2 (Linux)"/>
+	<meta name="created" content="00:00:00"/>
+	<meta name="changed" content="2022-09-14T19:35:52.673470979"/>
+	<style type="text/css">
+		@page { margin: 2cm }
+		p { color: #000000; text-align: left; orphans: 0; widows: 0; margin-bottom: 0.25cm; direction: ltr }
+		p.western { font-family: "Liberation Serif", serif; font-size: 12pt; so-language: en-GB }
+		p.cjk { font-family: "Noto Serif CJK SC"; font-size: 12pt; so-language: zh-CN }
+		p.ctl { font-family: "Lohit Devanagari"; font-size: 12pt; so-language: hi-IN }
+		h2 { color: #000000; text-align: left; orphans: 0; widows: 0; direction: ltr }
+		h2.western { font-family: "Liberation Sans", serif; font-size: 16pt; so-language: en-GB }
+		h2.cjk { font-family: "Noto Sans CJK SC"; font-size: 16pt; so-language: zh-CN }
+		h2.ctl { font-size: 16pt; so-language: hi-IN }
+		h1 { color: #000000; text-align: left; orphans: 0; widows: 0; direction: ltr }
+		h1.western { font-family: "Liberation Sans", serif; font-size: 18pt; so-language: en-GB }
+		h1.cjk { font-family: "Noto Sans CJK SC"; font-size: 18pt; so-language: zh-CN }
+		h1.ctl { font-size: 18pt; so-language: hi-IN }
+	</style>
+</head>
+<body lang="en-GB" text="#000000" dir="ltr"><h1 class="western"><font size="6" style="font-size: 24pt">Creating
+the Meta economy on StarkNet with @aspectdotco</font></h1>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<h2 class="western"><font face="Arial, sans-serif"><b>Twitter Link</b></font><font face="Arial, sans-serif">
+-&nbsp;</font><font color="#000080"><span lang="zxx"><u><a href="https://twitter.com/JediSwap/status/1569947558021312512"><font face="Arial, sans-serif">https://twitter.com/JediSwap/status/1569947558021312512</font></a></u></span></font></h2>
+<p class="western"><br/>
+<br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Rohit
+| rgoyal.eth  1:50  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Hello.
+Hey, Shawn </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Sean
+ 1:53  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Hey,
+Rohit. How's it going?</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Rohit
+| rgoyal.eth  1:56  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">It's
+going great man. How are you?</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Sean
+ 1:57  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Good?
+Yeah, I'm doing well doing well.</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Rohit
+| rgoyal.eth  2:01  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">What's
+up? What's happening?</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Sean
+ 2:03  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">I'm
+just busy. You know, like, I think I demoed what we were working on.
+Just like trying to iron things out so we can launch it publicly very
+soon. So just been quite busy.</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Rohit
+| rgoyal.eth  2:17  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Very
+cool. Very cool. And what do you mean by launch to public soon? Like,
+I thought you guys were like, Yeah,</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Sean
+ 2:24  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">we're
+live. But I think we're only showing it to some of the people in the
+ecosystem, including yourself. And then we're just ironing out some
+of the features before we make an announcement, basically, but it is
+life and anyone can use it. Like you said. Gotta find out. Well,
+yeah. How about you, man? How's things going? Good. I saw</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Rohit
+| rgoyal.eth  2:49  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">I
+was just trying to clear my telegram messages today. And you know,
+it's a never ending. Yeah,</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Sean
+ 2:55  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">yeah,
+I can definitely relate.</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Rohit
+| rgoyal.eth  2:57  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">I
+I still have 741 messages to clear Oh, my</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Sean
+ 3:02  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">God.
+Yeah, I feel like every day I wake up to new telegram messages. And I
+can imagine, just like keeps snowballing. Right?</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Rohit
+| rgoyal.eth  3:11  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Yeah.
+And this is obviously from the, from the groups which are not on
+mute.</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Sean
+ 3:16  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Yeah.
+Yeah. Yeah.</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Rohit
+| rgoyal.eth  3:20  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">These
+are the ones I have to read.</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Sean
+ 3:23  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Yeah,
+that makes sense. Yeah. I also meet a lot of group messages, you
+know, like those big bigger groups so that I don't get overwhelmed.
+Yeah.</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Rohit
+| rgoyal.eth  3:33  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Yeah.
+And how's John?</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Sean
+ 3:37  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">John
+is good.</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Rohit
+| rgoyal.eth  3:38  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">What
+is he up to? </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Sean
+ 3:38  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Yeah,
+he'salso very busy. He's in. He's in the states now. But yeah, he's
+been he's been doing well.</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Rohit
+| rgoyal.eth  3:45  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Oh,
+you are not in the States? </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Sean
+ 3:47  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">No,
+I'm in Canada. I'm in Canada.</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Rohit
+| rgoyal.eth  3:50  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">So
+Claudia, you mentioned to me you are going to Canada? Yes. Yes. Yes.
+And then you were flying somewhere I think from Canada in December.
+Yeah.</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Sean
+ 3:59  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Yeah,
+I think that's why timing wise it might be tricky. Yeah, I think I
+think I don't know if it's public. But you mentioned that you may be
+hosting something right but yeah,</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Rohit
+| rgoyal.eth  4:11  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">yeah.
+Yeah. Cool. Nice. So unfortunately, I'm not going to like invite the
+chair I swap account somehow okay, but I'm happy to invite the aspect
+account if there is someone or you have another device Oh,</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Sean
+ 4:31  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">yeah.
+So I don't think I have or let me see if I can join on my laptop</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Rohit
+| rgoyal.eth  4:42  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Yeah,
+I left off you can join but I can't invite you.</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Sean
+ 4:45  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Yeah,
+I think that's fine right because I'm I will probably be speaking
+with this</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Rohit
+| rgoyal.eth  4:51  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">that's
+fine. That's fine. Yeah, okay. I just just giving you an option of
+you can join but I can't be like,</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Sean
+ 4:59  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Oh,
+yeah. Okay. Yeah, sorry, there's some code because Yeah, cuz I tried
+on my, on the aspect that</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Rohit
+| rgoyal.eth  5:15  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">I
+was playing on my laptop as well and I thought like, what did I do?
+Cool anyways, so without further delay, let's start. So I think
+thanks a lot for the listeners and I'm sure some some of the people
+will keep joining in. And let me just make a quick announcement in
+our Discord as well. Maybe you guys can we will do the same. Mean do
+myself. Yeah, this is the thing right. You have to keep. You have to
+put that announcement yourself.</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Sean
+ 6:23  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Yeah,
+exactly.</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Rohit
+| rgoyal.eth  6:37  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Cool.
+All right. So I think we are all set.</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Sean
+ 6:42  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Yep.
+Sounds good.</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Rohit
+| rgoyal.eth  6:45  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">All
+right. So good to go. And thanks again, everyone for joining. Today,
+the format is going to be we're going to learn a little bit about
+Shawn. Journey Into crypto then like how how aspect came into
+existence? What aspect is what is it to what else? Shawn and his team
+has been building or contributing towards the stock net ecosystem?
+Why stock nerd? What do they think about NF t's on stock net and
+Metaverse and what do they mean by meta economy on stock net? And
+then probably like other stuff around that. So with that, Sean,
+thanks a lot for coming in. For sure. Why don't you quickly, maybe
+give a quick introduction? Like like 32nd introduction?</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Sean
+ 7:43  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Yeah,
+for sure. Yeah, thanks a lot for the invitation. I remember back in
+2021, I think when I first saw that I saw kind of been announced I
+saw like Jed, I saw do Twitter spaces, I think I believe that time
+was was darker. So you know, very honoured to be here today to speak
+with everyone from the Jedi swap, and also aspect community. So just
+a brief background about myself. I started in the crypto space, I
+think in 2017, I was building a lot of tools around the fundamental
+blockchain layer. So I was trying to visualise, like the blockchain
+architecture through and command line interfaces. And then at that
+time, I was also introduced to NF Ts and thought they were very
+interesting. But I didn't really see the use cases yet until
+obviously, in 2021, when the ecosystem started growing really
+rapidly. So I think I started in 2017. But I really started working
+in this space in 2021, when I was working@blockchain.com, at the
+time, and I think the company was known to be more of a Bitcoin
+focused company. But since they're seeing the use cases and define NF
+T's, I was on a team to sort of explore how we can better support
+Aetherium in our wallet. And then that's when I discovered things
+like you know, different layer two side chains with polygon.
+Optimistic roll ups was Dalton ism. And also obviously, z k roll ups,
+right with Z, K sin can start that at the time. But then, for me, you
+know, my co founder and I, we've always been very interested in the
+LFC ecosystem, which basically saw the whole ecosystem grow since
+late 2020. And we thought, you know, it's very consumer friendly.
+It's very social. It's very community based. It's also very
+culturally relevant. So I think for us, we're very excited to build a
+NFT product on what we think will ultimately scale Ethereum in the
+long term and really, you know, have an opportunity to bring crypto
+and digital ownership and NF T's to mass consumers. So I think that's
+what we're very excited about.</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Rohit
+| rgoyal.eth  10:01  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Bernie
+cool. And I think that was an amazing introduction and amazing start.
+And so that just made me curious, like, can you share a bit more
+about the wallet you just mentioned? Like, what are you building?
+Exactly?</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Sean
+ 10:14  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Yeah,
+so blockchain.com has been around since like 2011. I think they may
+be one of the first crypto companies ever, right? Like even two,
+three years. Like before Coinbase. So, you know, at that time, I
+don't think Ethereum even existed, right. Vitalik was probably like
+15 or 16th. At that time, so he was he wasn't like thinking about
+Ethereum yet. But you know, since they were so they're the world's
+most popular bitcoin wallet, right? Apparently, like 40% of Bitcoin
+transactions go through a blockchain.com wallet. And I think they
+were very, like the company itself is very focused on, you know, the
+fundamental value of crypto things like decentralisation, digital
+ownership, and that, and that's why they were very focused serving
+customers for Bitcoin. But I think obviously seeing things happening
+in the Etherium ecosystem, especially the use cases that emerged from
+the 2017, Ico boom, right? Like, I think the most obvious ones defy
+and nfts, they sort of realised that this could be a very big, you
+know, could be a very big, big factor that they didn't want to miss
+out on. Right, a very big opportunity. Because I think in 2017, it
+wasn't obvious whether, you know, smart contracts would actually be
+useful, right? People were launching all these tokens. But we didn't
+really know how we can bring utility tokens, right until defi
+happened. And then I think the company itself noticed that and they
+wanted to better support the Aetherium ecosystem inside their wallet,
+which was most primarily used for Bitcoin transactions. But then now
+slowly emerging, it supports you know, ERC 20s Ethereum, and they
+were looking at supporting layer twos as well. And that's sort of the
+team that I was on. And in terms of exploring some of the more you
+know, cutting edge and more nascent things happening in crypto and
+how we can better support that.</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Rohit
+| rgoyal.eth  12:16  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Very
+cool. So, I remember like blockchain surfing through blockchain.com,
+even for like, as an explorer, I used to use blockchain to call</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Sean
+ 12:27  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">back
+in the days like,</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Rohit
+| rgoyal.eth  12:29  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Yeah,
+I think I used to have a conversation from someone. I'm forgetting
+the name who who used to run blockchain.com Ventures as well. Oh,
+yes. And always had amazing conversation with that team. Yeah. So
+great. Like and what were you doing before? blockchain.com?</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Sean
+ 12:50  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Yeah,
+so before I was pretty much in college. Yeah. I think that was the I
+was in college, and then I was sort of exploring crypto while I was
+in college. I also, you know, I went to school in Canada. So the
+Ethereum Foundation also had a presence here. And you know, sometimes
+I hung out with some of the folks at a theorem foundation. I think an
+interesting story is in 2017, in the Ethereum Foundation, that's when
+I first got in. That's when I first saw crypto punks, I think in
+October or November of 2017. And then at the foundation, they were
+looking to build a marketplace only for crypto punks. Right. And then
+because at that time, there was only crypto punks. I think a couple
+of months later, crypto kitties got launched. But at that time, there
+was only crypto punks. And then they were sort of hiring a bunch of
+interns from the University of Waterloo, another university
+engineering focus University in Canada, and then they were just
+building a crypto punk only marketplace. And I believe at that time
+crypto pumps was like, basically free. Right? They were trading out
+like not nothing significant like it is today. So I think that was
+super interesting. Seeing seeing that. I mean, I think initially, I
+didn't pay too much attention because I didn't think aesthetically
+crypto punks looked amazing. But I think when the when the
+standardisation of NF T's happened, I think that's when I really saw
+the potential. Right I think, I think also the start standardisation
+of ERC. 20s also created the ICO boom. Right because there was
+standardisation people could launch their own tokens very easily. And
+then I think after crypto punks and crypto kitties, the
+standardisation of NF T's with ERC 721 and 155 really created the
+next boom for NF T's because people could just follow the standard
+and launch NF T's and have these marketplaces, bring all these NFT
+stuff all at the same standard together and allow people to trade
+openly and freely. So So yeah, that's the that's sort of What I was
+doing before blockchain.com</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Rohit
+| rgoyal.eth  15:03  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">So
+that makes a tonne of sense, right and that tells how pioneering
+crypto punks and crypto kitties were especially crypto kitties. I
+think it was even older than crypto punk if if I</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Sean
+ 15:16  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">so
+I think wrong. I think crypto punks was earlier than crypto kitties.
+Yeah. Oh, wow. Yeah. Okay.</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Rohit
+| rgoyal.eth  15:21  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">I
+didn't know that then I think then crypto kitties got popular because
+of that gas issues on Aetherium. Yes. That was the first project
+globally, which got mainstream attention.</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Sean
+ 15:31  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Yes.
+Yes. And I think because. Because, yeah. And I think it's because
+aesthetically, crypto kitties actually looked good. Right? Like if
+you gave someone if you show someone a crypto Punk in mid 2017, I
+don't think they would find it very appealing. But if when crypto
+kitties came out, it actually looks like it was drawn by an artist.
+Right? So I think that's when things like consumers pay more
+attention because there wasn't an eight bit, you know, something that
+looked like from the 80s or 90s. Yeah,</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Rohit
+| rgoyal.eth  16:04  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">that
+makes a tonne of sense. Yeah. So. Okay, great. So, like, you have
+been an OG in the space. You have been paying some attention to the
+whole NFT space since early 2017? Probably. So like, what happened
+when you were working@blockchain.com? Like, was there any learning?
+What when When did you go from there is is that when like you started
+expect? Or like what what was the?</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Sean
+ 16:34  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Yeah,
+yeah. So that's a really good question. So I was exploring, like
+layer twos, right for blockchain.com. And then I started reading
+photonics posts about the future of scaling Aetherium. And just from
+reading the post, actually, it's linked on the aspect homepage as
+well, if you scroll down, you'll see a quote from Vitalik. That links
+to sort of that blog post I was reading at that time. And it just
+sounds like the K roll ups will be the long term and scaling
+solution. Even more than optimistic roll ups or side chains. And I
+think it's because c k roll ups has the better trade offs. I mean, it
+still remains to be seen if that's true. But from a technical and
+theoretical point of view. I think that is the case, like obviously,
+when you settle from layer two to layer one. It's much faster, right,
+like optimistic rollouts. There's a one to two week dispute period.
+And then also, whenever you have more transactions, you get to batch
+more transactions and improve, right. So with more transactions, you
+actually have more scalability. And I think stock that has already
+talked about, you know, recursive scaling, right, which is, so they
+basically have a roadmap to scale blockchains, almost, like not
+infinitely, but at a very, very large scale that I haven't seen other
+projects really talk about. And I think Starkweather also has the
+technical talent and the right people to really pull this off. So I
+think that's when I really focused on z k roll ups in general. And I
+think when I was@blockchain.com, z k sync wasn't really an option,
+because I think they only did partnerships with bigger companies.
+They didn't have like a smart contract platform where anyone can
+deploy code to their blockchain. They weren't open at that time, I
+think in mid to late 2021. But Stark net was right. So as a person
+that was interested in C Karola. I think Stark net was the only
+option for me. And then when I got into the ecosystem, I realised it
+was so early, right? Like there was like five developers at that
+time. I remember like guilty of being being one of them experimenting
+with like, physics engines at that time on sarpnet. And I really
+noticed that there was a lack of tooling, right, like when I
+was@blockchain.com I was mostly a front end engineer. And I realised
+that you know, if you have a website, you need to talk to the network
+in some way. And you probably will do that through a library, right?
+Like an Aetherium. You have ethers Jas and work through Jas. So I
+started writing the initial implementation of Stark net Jas, that
+allowed any DAP on Stark net to talk to you start that, and then I
+think that's when Arjun started their efforts and start that as well.
+And then they saw the library that I was writing and they started
+contributing to it. And then it was a collaborative effort from there
+and obviously, you know, so So we</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Rohit
+| rgoyal.eth  19:27  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">like
+did you were you the first person who started working on starting ETS
+like Yeah, did you start started?</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Sean
+ 19:36  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Yes,
+yes, I started Yeah, I started</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Rohit
+| rgoyal.eth  19:39  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">okay.
+And after that, that was picked by RJ and and all everyone else,
+basically, who is building on stock.</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Sean
+ 19:46  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Yes,
+yes. Yeah. So</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Rohit
+| rgoyal.eth  19:49  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">that's,
+that's super cool. That's super super cool. And that tells like so.
+Like just being curious when when did you start working on staff net
+like when was the first time you started writing the first line of
+code around.</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Sean
+ 20:02  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">So
+I think that was in October of 2021. October or Oh, no, September.
+Yeah, September was when I started. And then I started writing
+darknet Jas in October. So I was I was experimenting with Cairo in
+September. And then in October I wrote strugnell. Jas. Yeah. And then
+Arjun started working on it as well. Yeah. Sokhna. Jas actually, is
+under my, like, if you check my GitHub, it's under my personal repo.
+But I think I largely don't work on it as much now as I am focusing
+on you know, aspect and, and, and such.</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Rohit
+| rgoyal.eth  20:40  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Yeah,
+very good. So just just for the listeners, can you, like quickly
+share what is started? Yes. What does it do?</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Sean
+ 20:49  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Yeah,
+for sure. So I think start. Net Jas is the library that allows you to
+talk to the stark net blockchain in a JavaScript environment. Right.
+So if you have a website, you know, what websites are running
+JavaScript, and there needs to be a way to talk to the stark net
+blockchain. Right now everyone is talking to the to the same
+sequencer. It's called feeder gateway. And it's just a bunch of
+functions that allow you to call the network very easily. Before I
+think what people had to do is they had to write their own GET
+requests their own post requests if they wanted to talk to the
+network. But now there's a library that can just take the functions
+and call it directly with the library. So it's Yeah, so it's just a
+library that allows you to interface with this dark net blockchain.</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Rohit
+| rgoyal.eth  21:41  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">And
+like, why did you start the start node js? Like, what was the
+inspiration behind that? Or the motivation?</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Sean
+ 21:48  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Yeah,
+for sure. So I wanted to build an app on Stark net, right? I was
+like, okay, Stark that is very scalable, what kind of experiences
+what kind of apps can I build on startup. And then when I started
+writing the code, I realised I couldn't talk to the network, right.
+And I had to write all the functions to talk to the network if I were
+to build a web app. And then I was like, Okay, there's no library, I
+can write this library so that other people can also use the same
+functions to talk to the network. Like for me, it was always a means
+to an end. Like, for me, I always wanted to build a product. But
+there was no tooling that allowed me to build a product. So I had to
+build tooling first, and then I could build product. So I think that
+was the net the motivation was out of necessity, rather than that's
+what I wanted to do. You know, I had to do, I had to build a library.
+So I built it. And then I started building the product once the
+library was at a state where I could build up build a product.</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Rohit
+| rgoyal.eth  22:45  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Very
+cool. Very cool. So like how I'm picking your journey is like you
+were experimenting with crypto early on in your college. Then you got
+a job in crypto and blockchain.com. Again, Bernie, one of the
+pioneering company in crypto, and then you felt like okay, this is
+where crypto is going ZTE roll ups are the future. And then in that
+you realise start net is taking the charge. And you started playing
+with that. And then you basically started building something on stock
+net for that you needed a way in which you could interact with stock
+net on the front end. As a result you started building working on on
+stock net, JF Yes, exactly. Yes. If you don't mind, like do you mind
+sharing? What were you working on? While you basically you started
+working on stock images? You mentioned you Oh, yeah.</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Sean
+ 23:41  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Yeah.
+So at that time, I was really experimenting around gaming, actually.
+So I was like, Can I build a game on stock that so I was looking at?
+I was looking at a lot of turn based games, right? Because I don't
+think we can have games like FPS as yet, right? Because I think Stark
+net still has a challenge around finality, but I think turn based
+games or a reasonable so that's what I was experimenting around. And
+then I think there was a person called forgot his or her name
+exactly. But he wrote an article, I think he was called Karang, Karan
+or something. And then he wrote an article about like, chess auto
+gamblers on started, and I thought that was pretty cool. So yeah, I
+was experimenting around turn based games, like things like chess,
+you know, maybe like a Pokemon battle simulator. That was something I
+was I was playing around with, but I thought that was really cool.
+Because I think, you know, going back to going back to my original
+motivation, like I really want I really liked building for consumers
+and I think gaming is and you know, things like NF T's are the
+epitome of that. So I that's what I was focusing on when I wanted to
+build on stack net.</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Rohit
+| rgoyal.eth  24:59  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Already
+cool. So Like more more, I'm digging around your story more topics,
+basically I am, I am figuring out like we can chat about. So like
+just just moving a little bit ahead in for four aspects. And then
+like maybe we can chat about other topics as well. Sure. So when did
+you come to the conclusion that you want to build aspect?</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Sean
+ 25:25  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Yeah.
+So I think when I realised how early the ecosystem was, right, like
+it was so early that I think we needed to build a lot of the
+primitives in the ecosystem first, before we can really have some of
+the more novel applications. Right. And I think the primitives, like
+you're working on a very important primitive, like an Amm. Right? And
+I think like NFT marketplaces are also very important primitives,
+right? Like things like tooling, as well. They'll JavaScript
+libraries, other Python libraries, Ross libraries, also, like
+explorers, I think are very important. Like those are all like the
+fundamental primitives that I think need to be built. And you can see
+it across all ecosystems, right? Like, if you look at Solana, for
+example. They also have NFT marketplaces, they also have ammc also
+have lending protocols. Right, they also have Oracle's. So those are
+all primitives that need to be built before people can really
+experiment on much more novel things, or else it just seems a little
+bit premature if those fundamentals are not available for for people
+to use.</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Rohit
+| rgoyal.eth  26:37  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">So
+like what, like, for an example, like what made you decide like, this
+is like an NFT marketplace is what you want to build, like, maybe not
+a defy Lego or not a game? Because like you were already working on a
+game, like how did you come to that conclusion?</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Sean
+ 26:53  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Yeah,
+so I think like, for me, I've always been really interested in NFT.
+It's like my co founder, and I, we've been, you know, we've been
+we've been participating in the NFT ecosystem since late 2020, early
+2021. So we sort of saw the whole growth. And we're also very excited
+about Spark net. And the scaling of Ethereum bring in a lot more
+opportunities and all more users and consumers. So I think that's
+sort of the merge of what we were interested in, right, like NF T's
+which was, which I mentioned was like consumer friendly social and
+cultural. And also scalability, right, something that blockchains
+have been, have been faced with since the existence of blockchains.
+So I think just combining those, and NFT marketplace just made sense.</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Rohit
+| rgoyal.eth  27:41  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Quite
+so And okay, so then you started working on aspect, and I assume
+like, as far as I didn't know, what was the name like before?</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Sean
+ 27:51  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Oh,
+yeah, it was. It was called Oasis, right? Because, yeah, we took
+inspiration from Ready Player One, right? Like the metaverse and
+Ready Player One, the movie by Steven Spielberg is also called Oasis.
+So that's where we took the inspiration from. But then once we
+launched, we realised there's a lot of Oasis's in the crypto
+ecosystem. And we've gotten messages from them that they don't like,
+they don't like that we're using the same name. So we decided to
+change.</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Rohit
+| rgoyal.eth  28:21  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Yeah,
+got it. Got it. So like, like, tell us a little bit about? Like, do
+you think it is any different compared to like NFPs, on Aetherium, or
+other layer ones? Both from a wider NFT perspective? And from an NFT?
+Marketplace? Perspective?</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Sean
+ 28:42  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Yeah,
+I think NF t's on start out, what we seen is the really, the
+legitimate builders and stock that they're really thinking about
+gaming on on stock, like NFT is constructed. And I think as a
+marketplace, we want to support that as well. You know, and I think
+that's why we've, we've made our API available very soon after
+launching our product, because we think like a lot of games will find
+our API's useful, right? Like a lot of games, they don't need to
+index dark net, they don't need to. Yeah, they don't need to index
+dark net, like everyone needs to index dark net if they want to make
+NF T's available inside their game. So we sort of wanted to focus on
+the infrastructure and tooling level, like sooner rather than later.
+So we can sort of support the gaming ecosystem that we see are having
+a merging on socket. I think I think specifically what we've seen is
+like, like displaying NF T's obviously are very important, but also
+things like trading, trading infrastructure, like people want to be
+able to trade inside their game, right? That's also very important to
+them. And also like finality is very important. Like whenever you're
+playing game, you want things to be fast. Right. And I think that's
+why people like working with us because we sort of have our indexer
+is extremely quick and picking up data and NFC from from the
+blockchain. So I think speed and financially is very important. Yeah,
+those are some of the things I can think of, at the top of my head.</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Rohit
+| rgoyal.eth  30:18  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">So
+like, if you will, if someone if I asked you to compare yourself with
+something like open tea, so what will you see? Like? What are the
+differences between open sea and aspect?</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Sean
+ 30:34  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Yeah.
+So I think there is some unique challenges that are in stark net,
+that open sea you may not have to worry about. Like, I think one
+thing is finality, right? Like finality on strike that currently is
+very slow. So I think whenever someone runs a transaction on our
+platform, we run it in the background, or you can do other things,
+but then go back to it. Well, on open See, they don't care, right,
+because finality is much faster. So I think that's one. I think
+another thing is, from a technical point of view, because we're on
+there to roll up, we need to care about layer one and layer two as
+well, right? Because the layer two blockchain depends on layer one.
+So we need to consider a lot more things. That if you're only on
+Aetherium, you don't need to consider right. If you're only on a
+theorem, we only care about Aetherium. But we have to care about
+Aetherium. And also start net because both of them depend on each
+other. So I think those from a high level point of view, those are
+some of the challenges that I think we face, but a platform like open
+sea in may not be facing. Yeah.</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Rohit
+| rgoyal.eth  31:39  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">So
+can you like explain more from a user's perspective? Why does that
+matter? Like, why does that L one, and like, how does it matter to a
+user? Yeah, having this L one and l two kind of construction.</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Sean
+ 31:54  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">So
+I think from a user's point of view, it might not matter. But I think
+from a user's point of view, what matters is the scalability part,
+right? Like when you're buying a T on stock, now, that's going to be
+like half half a cent, or 1/10 of a cent. Whereas if you're on open
+sea, before in the bull market, it could be like 50 to $200. Right.
+So I think that's much better on Stark net. And also, I think, I
+think the challenge maybe for now is that finality is slow. So
+running transactions are slower. But I think because of the
+scalability as well, people could play a lot more interactive games
+on Stark net, that they were they were not able to on Ethereum, and
+with more interactive experiences, they would also need to be able to
+trade those assets that they are using in is in doubt those sorts of
+experiences, like games, for example. And they're able to do more
+actions, right? And, like, do more things in a more cheap way on
+startup that was not available on on a theorem. I think I hope that
+finality becomes much faster on on Stark net, then I think we will
+really notice the benefits of being on Stark net in general, like
+fast finality cheaper gas fees. And I think I think that will make
+new experiences that we haven't even seen before on Ethereum. So I
+think from a user's point of view, those are the bigger benefits.</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Rohit
+| rgoyal.eth  33:19  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Guys
+got it. So what I hear is, basically, there are probably three
+reasons of or three advantages on stock net, for an NFT marketplace
+or NFT. ecosystem. One costs, like it is much cheaper to meant to
+trade to transfer NFT. Second is finality, it is going to take much
+less time which is higher. So it is not exactly true today, but yes.
+In the roadmap, I think the next on the roadmap is parallelization of
+I think some of the things. And then the third thing which you
+mentioned, which sounds the most important is the utility part, like
+what can you really do with your NFT? Yes. And that's where I think
+the whole game really changes for stock net. So can you expand a
+little bit more on like, so you mentioned a couple of times like
+games have maybe like in game trading experiences or in game trading
+utilities or something like that. So is it something that doesn't
+happen on other blockchain today? Does it happen on any of the
+blockchain today? Like, is there something unique?</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Sean
+ 34:38  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">So
+I think, right now from Okay, so in 2021, we did try to experiment
+with some of the API's from open sea. And I think when you're using
+open seas order book, it wasn't that obvious how to allow trading if
+you're building your own game, for example, And I think that's sort
+of the challenge. Because if you're sort of providing a trading
+experience as a marketplace, there's a lot of complexity on how you
+match the orders. Right? Like the games need to know, like, Okay, if
+I got a cotton order from aspect, how can I match that order? And
+then put it on chain? Right. So I think, when we tried it on OpenCL,
+it wasn't obvious how that can be done. And I think for us, if we
+want to do it, we would have to wrap it around in SDK, so that things
+can be so tricky, like implementing the trading part can be easier.
+So I don't I don't know if I saw in 2021 that a lot of people have
+their own marketplaces, powered by these, like API's, but I think
+I've seen them more recently. Like, I think I saw a board a
+marketplace sort of powered by wearable, for example, right. And
+marovo will write a SDK that allows people to train onboard wearables
+order book. So I think that's something we're also planning to have
+on the roadmap so that people can, people can have their own in app
+training experiences of NF T's without having to train on our
+platform.</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Rohit
+| rgoyal.eth  36:15  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Guided,
+so I just invited a fresh pizza as well. And like, present, I have
+spoken multiple times. We have been working together on couple of
+things. And he is just an amazing person. So I just thought like, it
+would be great to have another another voice on this podcast social.
+PISA will be playing a co host. This is like something I'm doing for
+the first time, although he will be playing as my co host hat is a</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Unknown
+Speaker  36:44  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">no.
+Thanks for the warm intro. I hope my mic is okay.</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Rohit
+| rgoyal.eth  36:49  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Yeah,
+it works fine.</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Unknown
+Speaker  36:50  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Okay.
+Cool. Now, happy to be here. I might have met Shawn before I'm not
+sure. I remember someone talking to someone from Asus. Yeah, I didn't
+actually know.</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Rohit
+| rgoyal.eth  37:04  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Would
+have been in Amsterdam. Yeah. Cool.</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Unknown
+Speaker  37:10  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Yeah,
+happy to be here.</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Rohit
+| rgoyal.eth  37:12  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Yeah.
+So is that do you have any any question you want to ask on share just
+right now?</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Unknown
+Speaker  37:20  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Yeah,
+actually, one that what one thing I was thinking about was I do
+definitely like the all we see on stock net, there are actually a
+bunch of games, right? That's seems to be one of the very strong
+areas in stock net right now or industries. But it does seem that for
+example, a lot of games, what they might be, what they want to trade
+might not actually be NF Ts, right? If you think about in game
+resources, or traditionally, traditionally, even for something like
+Counter Strike skins or other things, you oftentimes don't have NF
+Ts, things that are unique, but oftentimes, something that you would
+probably package in ERC 20s. Is that something where you say, Okay,
+we'd rather focus more on games and try to, for people to trade
+everything that they can on games, or no, we're just focusing on nfts
+and ERC? 20s. That's a separate ballgame.</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Sean
+ 38:18  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Yeah,
+so I think that's a really good point, I think, in terms of those
+kinds of game items that you mentioned on, like, for example, Counter
+Strike, that would I think be 115. fives, right. So semi fungible
+tokens, so they're unique, but they can have multiple copies of the
+same asset. And I think that would sort of fit their use case,
+probably more. And we are also thinking about how we can support 115
+Pipes better on our marketplace. But I don't think we're open to
+sharing what that looks like. But I think 4115 fives like an AMI
+model may make more sense, right, because they're semi fungible. So
+even though they are sort of unique, they have many copies of the
+same thing. So I think that's something that's an area that could be
+very interesting if that answer, yeah. Cool.</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Unknown
+Speaker  39:12  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Yeah,
+no, no, interesting. Yeah. No, because yeah, either. Hmm. So even
+audiobooks. You know, it's just it's probably a different method,
+rather than NF Ts, which are oftentimes more auction style
+exactinside being done, done there. So yeah, interesting.</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Sean
+ 39:33  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Yeah.
+So I think we've already seen some of that. And Ethereum like,
+there's, there's like pseudo swap right? And FTX I believe, but they
+also do 720 ones, but I think Wall one five fives and AMS have much
+more synergies right, since they're not like each year C 721 is not
+completely unique. So I think that's that's a really interesting area
+for sure. And especially relevant for games.</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Rohit
+| rgoyal.eth  40:00  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Yeah,
+that makes a tonne of sense and like, again, just to summarise for
+listeners, like, there are primarily two kinds of NF t's the one kind
+of NFT is our lecture on the contract perspective, we call them ERC.
+721. Where each single NFP is unique, there is no, another copy of
+the same kind of NFT. And the second kind of NF T's are where, like
+the same NFT can have multiple copies. Like imagine in a game, there
+is some special power. So multiple people can have that special
+power, like let's say, a special squad, so there can be 1000 special
+squad in a particular game. So those are our 1155 standard. For sure.
+So, Shawn, like on that? Like, have you faced any any difficulties?
+Or do you see that there is like, anything lacking from the tooling
+perspective? Or can you just share like a broad light from the
+perspective of like, the stark net ecosystem as a whole? Like, how
+does block times fees toolings or dabs like where all of that those
+spend today? And how does it impact aspect in any sense?</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Sean
+ 41:19  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Yeah,
+so I think tooling still needs to be better. But I think it's still
+obviously a work in progress, I think in stark net ecosystem as a
+whole. I think Cairo is obviously a much more challenging environment
+to develop in. And I think, yeah, I think Cairo in general, is it's
+much more challenging and less mature. But I think at the same time,
+you know, there are resources being built, like people writing
+educational material. And I do think like, even with the tools, for
+example, like the library's right, a lot of times, it's not that
+clear how it should be used. So I think documentation needs to be I
+think the challenge is not even documentation is like keeping up to
+pace with the updates of stock now, right? Like, when you write
+documentation, you need to keep up to date all the time as document
+is changing. So I think documentation is a challenge, because it's
+always changing and rapidly evolving. For the libraries, at least.
+And then I think even the read only notes, right? There is still a
+work in progress. Like every time, there's updates, all the nodes
+need to update. And a lot of times they don't work whenever there is
+an update. Right? So that's also challenging. I think the explorers,
+right, like right now, if you run a transaction, and you look at
+Voyager, you don't see it just says it can't be found. So maybe that
+can be improved. So I think as equals, and I think regarding fees, it
+would be nice to have more transparency around, like how the fees are
+calculated. Obviously now, I think it's more of a black box. So I
+think some transparency around fees will be good. But maybe maybe
+that will happen when starting to decentralise this. I think another
+challenge is like the Regenesis. Right? I think there's not as much
+clarity around that. At least for daps at this stage. Even for
+wallets right. I think while it's the user experience for wallets,
+sometimes they hit and miss. So there's that the wallets may need to
+be mainly to be more user friendly. But I think it's just more a
+result of the socket ecosystem being very early, right, like I think
+Alpha main net, basically, it was half a year was launched half a
+year ago. So I think things are still being improved every day. But I
+think for you know mass consumer adoption, there's still some ways to
+go before we can truly get there. And I think another challenge
+especially for defy I think is the cap on the stock net TVL I think
+there is still a cap on the TVL which could limit a lot of liquidity
+right because for defy liquidity is is very important. And if there's
+a cap on the TBL that's also very challenging, but I think maybe the
+cabinet will be be more flexible after the Regenesis. So I think
+those are all things that I think after I hope that after the
+Regenesis things will be more smooth on on those kinds of things, but
+at the same time, right. So I can't is an alpha and there's rapid
+updates every every every week. So I think that's also what is
+expected in a ecosystem that's rapidly evolving.</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Rohit
+| rgoyal.eth  44:41  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Yeah.
+And just to summarise, like what is read Genesis, so read Genesis is
+that event where stagnate will basically go back to zero you can
+think about it like all the data have started we'll get deleted
+somehow. And then or let's say, like started will shut down and then
+the new stock networks and will come and they will try to bring the
+data to the new version in some sense and like some some of the
+history will get deleted, accounts will probably might get deleted,
+like you might not have the same account address which you had
+before, in in this time some like there is a risk of losing funds as
+as well. And I think that risk is higher, even higher for NFT. Yeah,
+yeah.</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Sean
+ 45:34  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Yeah,
+for sure. Yeah. And I actually like, yeah, that was a really great
+summary. But I just think just to tweak it a little bit, I think they
+will probably run in parallel for some time, before one gets shut
+down and the new one sort of exist on its own, because I think there
+will be okay, I don't want to make too many assumptions here. But I
+would imagine they would run in parallel, and then migrate some of
+the assets to the new chain. And then the old chain, once it's fully
+migrated, the old chain will cease to exist. So I would imagine that
+will sort of how it will play out. But to be honest, nobody really
+knows what's going to happen.</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Rohit
+| rgoyal.eth  46:15  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Yeah.
+Is that did you have a question to ask them or something to share?</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Unknown
+Speaker  46:21  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Yeah,
+sure. Shawn, you said something regarding to which I found resonated
+with me, which is, you know, Rohit and me we come from know the defi
+side. And therefore double what you said liquidity is a very
+important thing for us when it comes to a lot of products even
+working in the first place, right? Yeah. Like a certain amount of
+liquidity for certain lending, indexes etc, for that to even be
+available. If t space, I have the feeling there's a bit of a
+different network effect when it comes to artists coming onto a
+chain. You see it with I find that to be interesting. Polygon was so
+much more cheaper than a theorem, but still, people still didn't want
+to buy from the Oh, you had to be on the theorem. So there are some
+different effects going on. Which when it comes to where people want
+to go for the NF T's, you have some insight. What might be important
+for for the NFP space in contrast to the different space?</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Sean
+ 47:27  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Yeah,
+I think yeah, I think that's a really good point. I think there's
+sort of like two crowds right in the NFT space. There's like crypto
+natives, like people that have been been around for a long, longer
+time. And from what I've seen around crypto natives, they prefer
+Aetherium. Right? And I think it's because of a matter of trust.
+Right? Ethereum is much more decentralised than polygon, I believe.
+And that's why people feel safe. Launching a long term project on
+Ethereum. Right. But I think recently, we've also seen polygon. Like
+I just feel like polygon has a killer BD team, right? they've sort of
+been signing on all these like big consumer, traditional companies,
+like I think a few days ago, I saw them sign a partnership with
+Starbucks. So I think that's also very cool. Right. And a number of
+other big companies have been on Polygon as well. Something that
+comes to mind is like 100, thieves, right. One of the premier eSports
+company is also has also launched things on Polygon. But I think
+that's sort of a different crowd. Right? And those are sort of
+traditional companies that don't embody crypto values as much as as
+crypto natives. I think they're more open to launching tokens that
+are on chains that fundamentally are not as how do you say like, it's
+not as, like you're not as comfortable with write just because you
+don't embody the same same values for crypto native. So I think
+that's sort of what we're seeing. I think right now, I think
+obviously, for Stark net, right. It's completely centralised, on a
+single sequencer, and I think Starclan also realises the importance
+of decentralising, their sequencer and also verifiers. So I think
+that we'll see how it plays out. Right. But I think, right now for
+centralised chains, a big a big thing for them would be BD, right?
+Because they don't I think when you're when you're doing business
+development with traditional companies, decentralisation may not
+matter. Right? But for people that are crypto native, that have been
+around for a while, they really care about decentralisation and
+crypto values. And I think a lot of the projects you see on Ethereum
+are more crypto natives, right? If you look at the founders of for
+date, for example, or the founders of duel, right, they've been in
+the crypto space for a very long time. And they care about crypto
+values and that's why they feel comfortable building a company on a
+theorem rather than something that's less centralised or doesn't have
+long good as good long term prospects, because I think the
+centralization really, really matters on a long enough time scale.
+And as a company, that kind of timescale really matters, right for
+the longevity of your company.</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Unknown
+Speaker  50:16  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Yeah,
+I do wonder, though, if, because you're completely right polygon has
+been killing it when it comes to signing on partners in that space.
+You think sort of, because even for the period, in quotation marks,
+you know, some of them might even stay on Aetherium. But those are
+not wealthy enough. There are a bunch of other alternatives to stop
+net as well. Right. Your secrets are between optimism etc. Do you
+think Stuxnet is doing enough? Business Development in that sense for
+the to, you know, for the people to come to Stockman? Yeah, yeah,
+that's what I</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Sean
+ 50:57  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">think.
+Yeah. So I think it depends what you're prioritising. From my point
+of view. And this is purely my opinion, I think like, even if you do
+a lot of BD with traditional companies, right. And you make a
+partnership, I think they will, even though in the short term, I
+think they might launch something on your chain, right? Like, maybe
+they'll launch a NFT collection. But typically, traditional
+companies, they're also sort of experimenting, I'm not sure if they
+will be building in the ecosystem for a very long time. Whereas
+crypto natives, I think they are more, they're more committed to
+building in the ecosystem for the long term. Right. So I think, if
+you're looking, if you're looking at medium to long term scale, you
+probably want to attract more crypto natives, because they will
+continue to stay with you for a long period of time, whereas if you
+do BD with traditional companies, maybe they'll launch something. But
+after they launch something from what I've seen, they typically don't
+stay around, like even the companies that are launching things on
+Aetherium, traditional companies, they don't really continue with
+their effort, right? They don't care about community, they don't care
+about fostering what they've released right there, I find that
+they're literally leveraging their brand value, and sort of seeing
+how much their brand value is worth on Aetherium. And once they sort
+of get that information, they don't stick around and build for the
+long term. But I think crypto natives do, right. So it really depends
+on the time scale you're looking at, and sort of what kind of people
+you're trying to attract. And from what I've seen was stark, where
+they're definitely more long term oriented. But I think that might be
+to a benefit or to the detriment of them, right? Because you could
+argue that maybe in the short term, you want to sign on more big time
+partners, and then sort of get that mass consumer adoption, and then
+you can focus on, you know, medium to long term efforts. So that
+could also be true, right? Honestly, I don't, I don't really know.
+And I'm just, you know, trying to predict the future, that will, that
+will probably be completely different. But I think on a general
+level, that's sort of, that's sort of how I see it, I think,</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Unknown
+Speaker  53:06  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">ya
+know, interesting. And I definitely do agree when it comes to for
+long term success, who are the people on there that are either you
+know, buying NFT or producing, creating the projects. And that's
+where I'm usually I'm quite bearish on on on chain gaming, or in
+general, like blockchain gaming, but when I see the stuff that is
+being built at Matchbox style, and the people they know, for the
+first time, it's not about, okay, how can we, you know, selling the
+items and all these things, but it's fully on chain game. And people,
+they are so passionate about this topics, and actually, you know,
+working on actually very difficult topics as well, right, with a
+bunch of no hidden information, all of that stuff, a lot of proofs as
+well. And that's one of those things where I'm also you know, it
+doesn't need it. But, you know, Matchbox Tao has, what 7.5 million, I
+think was the rate. Yeah, that's great comparison to the other
+platforms, but I'm way more confident that they're going to build
+it's gonna be long term viable from the kinds of people that are
+there in our building.</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Sean
+ 54:16  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Yeah,
+yeah. Yeah, I think as long as they're willing to stick it out for
+the long term. I do think it's possible that they can build something
+very novel and interesting, that people are very excited about,
+right. Like, I don't think we would imagine, like in 2017, that we
+would see things like what's happening around defy and things with
+NFT. I remember back in 2017, we just saw everyone launching tokens.
+And that's sort of the limit of what we could see. Right? I never
+thought that there would be a huge defy ecosystem, like all these use
+cases started emerging. Right? And I really hope like, even with NF
+t's a lot of NF T's was launched in 2021. And I think in the next
+couple of years, it's just finding the utility right like as well he
+had mentioned Um, utility and use cases similar to, you know, how
+defi broad utility tokens. So I think that's going to be very
+interesting and very exciting. In the next couple of years, it's just
+finding more use cases more utility in the crypto space. And I think
+that's super, super interesting and very exciting.</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Rohit
+| rgoyal.eth  55:19  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">And
+I think that's where stock net really shines, because I do not think
+there is any other blockchain where games are 100% on chain, which
+means like, the logic part, and as well as the assets part, which is
+dynamic. And that's probably like the unique in started. And as a
+result, like NFT is will play a much bigger role as a utility, like
+probably in games and some of the some of the stuff.</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Sean
+ 55:47  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Yeah,
+I think so as well. And I think if really there is to bring utility,
+we really need to decentralise, right, because I think it's a matter
+of, you know, trust as well. When things are decentralised. It's
+easier to trust, right? Because you're not just trusting one person.
+You're trusting everyone in the network, right, which is basically
+you're trusting the world, which seems like that's a that's fine to
+trust, right? You don't want to trust one single party that can do
+whatever they want with the rules. So I think under long term,
+decentralisation will really matter.</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Rohit
+| rgoyal.eth  56:21  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Yeah.
+So we have another person in the speaker list, Hale and Jim.</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Unknown
+Speaker  56:28  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Hey,
+Rohit. Thanks very much for bumping me up. Shawn, I just wanted to
+kind of comment to your point</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Unknown
+Speaker  56:36  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">about
+us kind of talking about polygon you were talking about start wearing
+kind of and starting and long term thinking and comparison to short
+term thinking. And kind of, I sense that we're, we're in a part of
+the kind of you want to talk about crypto market cycles, which, which
+rewards long term thinking in a way that the bull market tends like
+not to. And so, I almost feel as though now, even though I probably
+agree that that stock wears, you know, long term thinking can work to
+its benefit? And, you know, to its detriment, were probably in a
+phase now, where both, you know, start where, and I've, you know, we
+mentioned about polygon, you know, I'm not there seem a little bit
+behind on their, on their kind of, you know, z k. Tech and
+development than perhaps thought were is, but maybe even polygon as
+well.</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Unknown
+Speaker  57:24  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">You
+know, it says anything slightly long term from that perspective, will
+they'll flourish in the next, you know, couple of years?</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Sean
+ 57:29  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Yeah,
+like, I think for polygon they have, they're working on a lot of
+different technologies, right. Like, if you look at the polygon
+stack, they have a side chain with like polygon PLS, right. They have
+optimistic roll ups, they have the key role apps. So I think they're
+working on a lot of things. And that's, I think, sort of, I'm not
+sure if it makes sense. But yeah, like you said, I think, I think in
+the short term, there'll be the efforts will be well, will make a lot
+of sense. But I think in the long term, it still remains to be seen,
+right, like, maybe because their BD efforts have accrued a lot of
+users, that sort of momentum carries them on when they do think of
+like, sort of the long term value of decentralising, right or like
+building are more long term scaling solutions. So that could also be
+possible. So, I think, yeah, I guess in summary, I don't really know
+what's going to happen in the future. But I think there's different
+ways to look at it.</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Unknown
+Speaker  58:34  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Yeah,
+that's that's a very honest perspective. I think it's, it's much more
+marketable, to have a really clear line on what's going to happen.
+But realistically, none of none of us particularly have much of a
+clue what's going to happen. We're just kind of rolling with it and
+seeing, you know, building and seeing and seeing what happens, you
+know, yeah, for sure, for</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Rohit
+| rgoyal.eth  58:53  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">sure.
+So, on that knot, like, since we are coming to the closer, is there
+anything else shown which we might have missed? Talking about? And
+one thing I already have in mind is like you mentioned, Voyager, do
+you want to share like, what you had in behind the scenes?</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Sean
+ 59:19  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Yeah,
+sure. I can. I think I'll speak briefly about it. I just think, I
+mean, Voyager has been around for a year. And I think it has served
+its purpose for what it needed to be done. But I think right now,
+stock that is at a stage where I think people want more transparency
+around sort of the transactions are running, or like, let's say if I
+run a transaction on jello swap, and I check the status, it would be
+nice if I got some sort of feedback. And I think it would be better
+if there is a better, you know, block Explorer on sarpnet. And I
+think there's a lot of opportunities to be Word especially around
+like decoding transactions, making transactions much more human
+readable and understandable. Right? Like maybe if I do a swap and
+read, I swap and then I check the Explorer, I can see like, oh, you
+know, I swapped USDC for eath. Right, that those sorts of information
+can be communicated to the end user. And I think it can really
+benefit the Starrcade ecosystem. So I think I'll just end it. I think
+I'll just say, say that, yeah.</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Rohit
+| rgoyal.eth  1:00:30  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Cool.
+So is there anything else shown which we might have missed?
+Otherwise, we made just come to the end?</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Sean
+ 1:00:39  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Yeah.
+No, I think that I think we've covered a lot of ground. And I just
+want to reiterate, like, thank you so much for inviting me to speak
+here today. Like I'm Rohit I met you in Amsterdam. And I think, you
+know, you have a very strong background, you know, coming from yc.
+And I Yeah, and I really appreciate all you've done for the startup
+ecosystem. So thank you.</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Rohit
+| rgoyal.eth  1:01:03  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">I'm
+sure like I haven't done even 50% of what you've been doing. Like
+even if you include just stop net Jas. But But still, I'll take it. I
+find I'm getting so busy lens and like, do you guys have anything
+before we close the space?</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Unknown
+Speaker  1:01:26  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Is
+that do you hear me? No, not from my end I think was definitely fun
+hearing and looking forward to the project that was being talked
+about I think diversity is something that theory for example, is
+somewhat lacking sometimes or you see dominance from certain exploits
+as well as Excel excited to see what's what's going to come.</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Rohit
+| rgoyal.eth  1:01:52  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Absolutely
+lens em, do you have any any ending notes? Nope. By the way, where
+where are you joining from London? And what are you working on? Are
+you working on something?</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Unknown
+Speaker  1:02:08  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">I'm
+based in the UK. I'm not a dev not building for that perspective,
+actually are actually a medical doctor. And so but my my limit when
+it comes to blockchain is kind of researching and getting involved in
+you know, contributing more I can I was a community manager for a
+smaller one a little while ago, but now I've kind of getting into
+yeah, see key roll ups, etc, etc. So that's me.</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Rohit
+| rgoyal.eth  1:02:40  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">I
+mean, so thanks a lot, everyone. And Thanks, Shawn. Thanks bizarre
+thanks, Lindsay. For helping me co host or coming as a speaker as
+well as to not make it boring this time compared to like when I am
+the only one who is doing the post. And just a quick introduction, so
+we are building July swap, which is an mmm on top next, and July swap
+is 100% Done. And led by community that means there is not a single
+employee in July swaps. We as a community learn and build together.
+So if you're someone who just want to learn web three who just want
+to learn about stock market and build something together, just join
+July sub discord and we'll get to building together and learning
+together. So on that note, thanks again, everyone. Thanks, Shawn.
+Thanks, visa. Thanks. Bye everyone.</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Unknown
+Speaker  1:03:34  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Do</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+</body>
+</html>
