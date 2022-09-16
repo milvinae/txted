@@ -1,0 +1,144 @@
+﻿Home
+L2 on air: Numio<>Phezzan Protocol
+Episode 7: Numio <> Phezzan Protocol talking about DEX, zkSync 2.0 testnet, AMM & L2.
+Twitter Link - https://twitter.com/GetNumio/status/1564625514094071817
+
+Mark Anstead  0:00  
+All right, how's it going everybody Hello, hello. Can you hear me I can hear you loud and clear as well. How are you doing today? Excited waiting for this? Or yeah,
+
+I'm doing well can't complain days just getting started over here give it another minute or two while we let some people join in and then we can we can get started
+
+is there anybody else from your team that you'd like to get added as a speaker? Or will it just be yourself?
+
+Phezzan  2:20  
+Yeah, I think Roland can request.
+
+Mark Anstead  2:23  
+Alrighty. So if you are there, please, please request the mic. And I will add you as a speaker.
+
+Roland  2:45  
+Guys is Roland from Phezzan. Hello, hello. Yeah, Jack would do the most of the talking today. I'm just here to listen and see how things go.
+
+Mark Anstead  2:59  
+Awesome. Sounds good. I appreciate you joining.
+
+Roland  3:03  
+Thank you. How did it go is mean squared?
+
+Mark Anstead  3:06  
+A pretty good, you're gonna be chatting with them a little bit. One of the things that we're one of the things that we're looking at personally is getting some API's for CK sync 2.0 and stark net. So we can basically grab different types of metadata for NF t's on layer two. Right now there really isn't any for that, for that for the most part. So that's definitely something that we're looking into. Once those once those go live. So
+
+Roland  3:44  
+some great if you guys can just exhibit NFCs from Minnesota, that's gonna be something huge.
+
+Mark Anstead  3:50  
+Yeah, that would definitely be, that'd be great. I, I just want to be able to grab that type of data. So we can, people can essentially view and manage that information in the future. So
+
+Roland  4:03  
+yeah, if you asked about it, we are trying to like build our project on them. I think they're also requesting our metadata. So I think metre square will have all that information for all the projects this over there. Okay, cool. Yeah, so that yeah, that's just say like, no need to reinvent the wheels.
+
+Unknown Speaker  4:22  
+Yeah, that makes sense. Awesome. Well, I think we we can probably start start things up here and more people will probably join in as as we continue on. But in any case, let's, let's kick this thing off. So thank you everybody for joining. My name is Mark and set. I'm one of the cofounders of new MEO and if you aren't familiar with what new Neo is, it is a noncustodial mobile wallet on Ethereum. So you can buy sell trade invest into crypto, but our primary focus is giving you the best experience on layer two We were the first bullet to natively support ZK roll ups first and zkSync and our goal is to essentially build in support for a variety of z k roll up solutions for you to use. But today we are not going to be talking about new Mio. We are going to be talking about Phezzan. Am I actually saying that correctly? Is it for Zhan or Lizanne? Or how do you how do you pronounce it correctly?
+
+Phezzan  5:30  
+Phezzan
+
+Mark Anstead  5:31  
+Suzanne okay. Yeah. So we are here to talk about Suzanne and we have two of their team members. And without further ado, I will hand the mic over to you all. So please give us a quick little introduction about yourself. And then we'll jump into what you're working on.
+
+Unknown Speaker  5:52  
+Oh sure. I'm Jack I'm along with everyone we are to funders present political Sophie's in is a order book based Propecia decks and retailers can be obese our index. So first, like what is perpetuals there are a lot of new people here. So for Petros, it is ultra thin thetic contract that closely tracked this bulk price. So when you're trading for Petros, you're now buying the underlying asset, you're just trading a contract. So why invent the contract at all, so why just don't buy the spot. So the main benefit is, with perpetuals, you can either go long, or go short. On a spot, you can only go long. Also on perpetuals, you can have very, very high leverage, I think by Nance today provides 125x leverage. So you can trade as if you have a lot of a lot more money on your hand. So that's very attractive. For these two reasons. Propecia today takes around like 70% of volume for total amount all crypto markets. So yes, they have a higher volume, guest spots, higher volume than options, etc. They're like how does a perfect stranger works. So for traders is very simple. Any perfect exchange, you can either go long or go short. You can also choose your leverage. And perpetual exchange has a mechanism called like funding payments. So every once in a while, depending on whether you're long or short, you need to pay or receive a funding payments. So perpetual exchange use this mechanism to make the market price more closer to spot price. Finally, perpetual exchange has something called an insurance fraud. So what interests found is does is make sure like the perpetual was exchanges stay liquid. It doesn't go right. So that's how alcohol works.
+
+Mark Anstead  7:56  
+Very cool. Interesting. And so I guess with a perpetual exchange, obviously, you guys are building it out in a noncustodial manner. I believe I believe you're building it in the non custodial manner. Just before I continue with the question is, is that correct?
+
+Unknown Speaker  8:18  
+Oh, yes, so I'd like to all users assets, there will be a trade saved on here. But like we have like our own Automation Engine right now, like it happens like often we will eventually move it to entre like oh assets on chain like all trace that settles on chain
+
+Mark Anstead  8:34  
+data, okay. And for people who are like let's say like you're an LP Are there going to be like both am FM's as a part of your decks as well as order books or are you going to have just an order book associated with your decks? And for like LPS would they be experiencing like any type of impermanent loss when providing liquidity?
+
+Phezzan  9:08  
+Sure, so surance there is no present right now is it Amen, but like it will soon shift to like older book model we are building for and pure audiobook decks. So like, what is the new permanent loss anyway? So if you new to this, in criminal losses, basically when you provide liquidities on any mm based exchange, unless the price comes back to the price you provide liquidity for, like you're better off, just like no LP. So that's like, an issue like oh, and memes have. There are a lot of smart people in the world solving this like, unfortunately, the issue hasn't been solved now. On this issue, like, I think uniswap People did research like a month ago, or 19 most popular coins, most popular markets, only three of them. three golden LPs are making money. So that's impermanent. It's very bad for LPS. But like on a book, like, there's no impairment loss. So knowing permanent stock is an.
+
+Mark Anstead  10:11  
+Interesting. Okay, cool. And do you have sort of like a timeline in terms of when you're going to be transitioning from an amm into an order book?
+
+Phezzan  10:22  
+To be honest, we started up I think there's no exact time, but we will launch our Yeah, we enter launch on manage, like, this year.
+
+Mark Anstead  10:31  
+Okay, very cool. Awesome. And I, what are what are some of the ways that you're looking to sort of differentiate yourself from some of these other ducks that are essentially in the market? And would you say it's more so on like, the purpose side of things or just within like the actual experience with the, with trading, in general.
+
+Phezzan  10:59  
+So what we do is that we are on a vote base per Dex, but we also allows retail liquidity. So compared to all of our indexes, we, since we allow like retail liquidities, we can have like, we can afford a lot of volatile assets. Because today like almost all of our base, Texas, they are depend on market makers, market makers, they don't want to like trade these volatile assets, because it's risky. But retail LP that data mine. So for this reason, we can offer like volatile coins, like you can trade April and GMT on dydx. But like we do that, because then you can do it. So that's a benefit. And compared to mmm is like one is that we don't have any impairment loss. So it's better LP experience. LPS can earn more money and ended up for traders, we have like, more slippage, because like order book, they are more capital efficient.
+
+Mark Anstead  11:56  
+Interesting. Okay, cool. And one of the things that that I was sort of looking into on your documentation page, is there's there's a few different types of strategies, or I should say, trading strategies to be more specific that people can go and essentially deposit into. And I guess, like, you can consider them like market making strategies. Could you touch on that a little bit more? Is that something that other people, like? Let's say like, if I'm like, I'm a quant trader, and I can go and deploy, like a strategy that I have, like, let's say like, I'm Allergy Research, run, jump? And are there like different types of like, market makers that can get involved that other users can then deposit into? Or is it something completely different from that?
+
+Phezzan  12:57  
+I think that's right. Correct. On so okay, like, yeah, like we said, like prison is a holodeck allows retail liquidity. We allow you to liquidity by like, introducing our like liquidity marketplace. So inside our liquidity marketplace, anybody can upload this tripster strategies, market making strategies, like without any permission. And so like, once it's uploaded, we show on website, hey, we'll show to our users. Hey, these are different kinds of strategies, what they're TVO is like, what their API is, what's the strategy about with developers so it will be very clear to retail LP like whether this strategy is like attractive or not. So if they're interested they can put money into it and so the money will be store I totally don't care it's noncustodial and like, market making bolts, these treasuries like can use the money from these retail LPs to mark and make like on behalf of these LPS so that way is that market making eye on fees and protocol is as easy as market making on like uniswap So this is a nother case before fees Am I because I'm most I think right now I'm on a book base Texas on like you can't if you don't know how to programme you just can't like Mark and make just because a very complicated to market make on audiobooks.
+
+Mark Anstead  14:27  
+Wow, that's really cool. Okay, interesting. And then so then the, I would imagine that a lot of the people who are making these market making strategies like would they be getting, like carry on profits or just like commission on like, funds that are deposited or how is that sort of able to be customised?
+
+Phezzan  14:52  
+So, hello, yes. Like, these strategies make money like we will distribute like the profit I have the strategy to the structure owners, and like these, these owners can determine themselves Hey, how do I how can I how should I like distribute these like p&l As to the liquidity providers. And so, each different structure owner can choose their own different profit sharing mechanisms. And these mechanisms will be totally on chain. So anybody can is very transparent, or a piece can see, hey, how do I get my p&l? So, yes, proper, these actually owners can get a cut from the profit. And the rest of the section will be distributed to the liquidity providers. And like also, other than, like pianos, these liquidity providers can also get like, a cut from the trading fees. And like, they may get some rewards like for for present token as well. So, yeah, that's our Hello ha works.
+
+Mark Anstead  15:56  
+Okay, very cool. And so I guess, would you guys be considered in the same realm as like competitors, or like, I don't know if I would necessarily call you guys competitors. But with with set protocol, because like I, I was one of the first contributors over at at index Co Op. And they're like, I don't want to say a similar asset management tool. But that's, I would say definitely more focused for indices. And this is probably just more like, Dex trading focused for the most part. I don't know if you're able to, like, explain a little bit more some how some of the ways that you guys are looking to sort of differentiate there. From those types of protocols.
+
+Phezzan  16:45  
+Yep. So like, these type of protocols like set, they are essentially the Arctic assets management tools. They are a golfer, instructor product, to the customers, like monkeys and political. Yes, we have our liquidity marketplace. You can like choose different strategies. But like, our main goal here to present is a liquidity marketplace, just service our index like we are indexed. Yeah. Growth. Yep. So this is a means to an end, like, with these retail liquidity with the liquidity marketplace, we can have the more liquidity to our index. That's a goal. So like I said, you know, we are decks and but like, there are some concepts, they're the same. That is like for each treasure owners, you can imagine them as like a separate hedge fund on Yes, retail these can choose at which hedge funds like they trust, like they found like his phone has a high API, they can just put money into it, they can yield very happy. So yes, for from that aspect is pretty similar.
+
+Roland  17:50  
+Also, may I add one more thing? Of course, go for it. Yeah.
+
+So from our perspective, like, we think in the future, when FISA is big enough, actually, we can integrate with protocols like set, right? Why? Because there will be 1000s of strategies out there. And set will be the inert for the traditional finance or transfer metaphor. Set will be the Flf fund funds or funds. So as a credit provider, or retail op, you're not really familiar with strategies, you don't even know how to shoot, you go to set right set well, in some extent, choose the source and figure out what's the best liquidity priority strategy for you, and then use that you don't even maybe you don't even use the filter itself, but you're still providing liquidity for fism. Does that make any sense?
+
+Mark Anstead  18:41  
+Yes, no, that definitely makes sense. Very cool. Okay. Awesome. And so right now, would you say like, obviously, I don't believe you guys. Were on Main net just yet. And that you're still on test net? Is that correct? You're still on that. You're still on test net?
+
+Phezzan  19:04  
+Yes. Okay. Cool.
+
+Mark Anstead  19:06  
+So I guess with that, like, how is husband the process for you all building on on Z casing, but what's the what's your experience been with that? And I guess deploying the test net and what makes you sort of excited about I guess the next couple months are gonna bring?
+
+Phezzan  19:27  
+Yeah, sure. So it's certainly very interesting experience because Ziggy's think at this point. It's interesting to panel. It's a very early stage. It's like it sounds so. So like when we try to deploy our code like he gets into but oh, we had a lot of issues like competitive competitor issues, and some of them it's like, because their competitors are so like a beta product. So it's, it's coming in ways that we help each other To like in the process, or when we are going to deploy on z gets into Moodle. And like, do you guys think King is amazing, they are very fast, they give a help to us. Also, like, biggest thing, community is awesome. We have a lot of awesome community members, they are excited about like Zika coupon or as excited as we are. So that's like, young Amazings he gets in to meetings, he gets in community gets very excited. And like once we launch, once he gets into below, we finally got our trust, transaction speed is coming very fast. And the gas for you just go down so fast and cheap. That's the thing that traders care about. So very awesome. And I think, um, I think the final thing is that we are very bullish on the ecosystem of like xinxing coastside. They are like ZKU n, where it's very easy to migrate over from L ones to DK sync without changing your code. You can like we deploy also at contract, like without much trouble. And yeah, so we can imagine like in the future, there would be a lot of great daps a lot of great projects. We already talked to a bunch of great projects, like onboarding, Zeke is so very, very bullish on Zeke is future.
+
+Mark Anstead  21:25  
+Awesome, love to hear it. What are, were you guys exploring deploying on other ecosystems? When you guys were basically putting together the concept for the project? And if so, like, what were some of the other I would say like networks or ecosystems that you guys were looking at, to deploy into?
+
+Phezzan  21:46  
+Yeah, we look into a bunch. But like, our final conclusion is that we are like most bullish on ZTE. VMs. Because we are bullish on Eve. Most users here like most liquid is here. Most great progress here. And like, monitor all these ease, like layer twos. The thicker you guys make more sense for us, because the cheap and fast they are like autism like arbitrary. And like, in like a month difference. zero ops, we choose to launch on decreasing first. Because like, they support like old version of solidity that's important to us. So it's really important a lot of projects. So yeah, by doing that, we believe, like there will be like tonnes of good projects onboard into these into well, that's like how a process we choose like CVS in cueball.
+
+Mark Anstead  22:39  
+Awesome, very cool. Yeah. I know many, many people, including myself, are eagerly waiting for for that to go live. It's going to be gonna be really exciting. So I guess, I guess with that being said, like, what are what are some of the other things that you all have on your roadmap for design? Like, is there anything that people can keep an eye out for any exciting announcements that you all can share? Or, or anything like that, we'd love to hear like some of the things for people to sort of look out for over the next few weeks over the next couple of months, and maybe something to look for a few months down the road.
+
+Phezzan  23:27  
+Sure. So I think the next major thing is that we will issue our own antes. So we will issue like, spacebar and I teach you initially to like our contributors, we have like many awesome contributors, in our community, they recorded all the bugs, and they record a lot of good feedback, they help us like in promoting his own protocol like translating our articles, like we are really amazed by our communities. So like NF t will be a way to contribute to for them i to reward for them. And like these like empty can be used like maybe like in the future user we can get a discount, right? When trading bounties and protocol. There are more and more utilities we can think about but we will like AirDrop these like NF T's in think in the future, like shooting the future. And then then next up is like we will launch on our order book on test that we are stoked to do over here. And we are in like thinking go progress regarding to launch and order book. So yeah, so after that a little book, it's like, like bug testing and audit then we hopefully we can launch the minute. Like whenever it is it is in the launch there a minute. So yeah, and that's roughly for the like Things we plan to do like destiny. And like after all these games like liquidity marketplace we talked about and a bunch of other things.
+
+Mark Anstead  25:10  
+That's exciting. That's really exciting. So I'm definitely very curious about what's going on with, I guess, like the auditing process. Are you guys mainly? For a lot of the projects that are I guess I would say like deploying on to the casing 2.0? Are you guys having those audits done natively in solidity? Are you doing that? In zinc as well? Because I actually, that's actually a question. I haven't really asked anyone that's actually building smart contracts. So kind of kind of curious on I guess, like the the approach there.
+
+Phezzan  25:47  
+Oh, that's really good question. So what's very special about Zika seem to employ is like you can just like, deploy you like solidity code without writing anything. That's like, why it's called like z given? Yeah, so like, our contract right now is 100% based on busying, like solidity. So like, when when you go on it, it will be like, like, if nothing changed, yeah, it will be 100% inside it, which is awesome.
+
+Mark Anstead  26:14  
+Very cool. Awesome. That's exciting. So I think this is a good time for us to essentially open up questions from the community. So any, any questions that you all have, that I that I might not have asked, feel free to jump in, request the mic. If you aren't aware, you can only really do that if you're on your mobile device. So if you want to ask a question, click on the button in the bottom left hand corner that says Request to speak. And you can then ask your question. So I'll give it give it a little bit while you guys can think about some questions and then we can start to wrap things up from here. Right, give it another 2030 seconds and then we'll go from there. Well, all right. Seems like I might have we got one person. Okay. There we go. All right. Chessy, the floor is yours. Please make sure to unmute your mic, and then you can feel free to to ask any questions. Yeah.
+
+Unknown Speaker  28:17  
+Hi, everyone. I'm just interested in what's the team behind says and maybe you can share a bit about your background? What have you done before? Starting fism?
+
+Phezzan  28:34  
+Yeah, so like, we are a and I must seem like because we want to let the product speak for itself. So yeah, like we will also share more but we decided to say that the product speaks for itself. Thanks for the question.
+
+Mark Anstead  28:58  
+I guess I have a sort of a follow up question on that. So obviously, like your team is anonymous at the moment do you plan to remove that anonymously? Or are you planning to stay anonymous throughout like the tenure of building facade
+
+Phezzan  29:17  
+so we can speak like that for future plans because know what nobody knows to be future we can assure they're like power like past story. So like before doing this we are like our team made a social app it's like yes sir distribution app and made to like top 100 spots in Apple App Stores like social networking category. And like we been like our funding team have been like a long one term traders in crypto. So like, we are really intuitive exes and we are really intuitive crypto trading. So we see like, when we are starting like is that protocol we try to constant access we see there's like what's the issue is like we talked about are there issues. So like is that Is there a way to like, fix the issue? And to really bring, like, we want to build the best access? And the other thing is like, when ever like in the future, like, if we face like some, like severe, like, say, one problem get hacked, etc. Yes, I mean, this will be a good time for us to, like stand out because like, yeah, like we want to, like, have like ownership being in like, whatever issue we have on boats, like it was fine. I mean, maybe it's better just Dianna. But yeah, and like if anybody who know who wants to, like know who we are like, we are really welcoming you to like just DMS, like maybe Twitter or discord. Like, we will love to chat with you. So we, there are a couple of committees coming in, and we're members like they even need to chat with us. So if you, you're okay to like for us to know who you are like, we will love to know you as well. So, yeah.
+
+

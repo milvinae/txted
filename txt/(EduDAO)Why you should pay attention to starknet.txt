@@ -1,0 +1,87 @@
+EduDAO  0:13  
+Hey Carlos how's it going man may invite you to be a co host how's it going? How you doing we are just waiting on Louis from Stark net right now. So just hang tight like he's at ease Warsaw right now so he's he's coming from some meetings
+
+Glad to have you in here though Hey Louis, how's it going? I'm gonna bring you up here right now actually Louis, do you want to request to speak again? I try to make you 
+
+Louis Guthmann  2:36  
+I'm cool. Hey, how's it going, guys?
+
+Very good. Thank you for hosting me. We're happy to be here.
+
+EduDAO  2:46  
+Yeah, thanks for joining us. We really appreciate it and take your time. I think Carlos mentioned your eath Warsaw or something like that. How's that?
+
+Louis Guthmann  2:57  
+It's very fun, like a lot of good people coming you know, talking to about Spark net. A lot of, you know, existing projects, but I'd be happy to see you again. It's pretty cool.
+
+EduDAO  3:10  
+That's awesome. That's awesome. I think we'll I think we'll give it a couple more minutes. Yeah, of course. More people join right here. And then and then we can probably just get started. Amazing. where I'm coming from Utah, actually. Oh, nice. Yeah.
+
+Louis Guthmann  3:31  
+Just I just retweeted the the events.
+
+EduDAO  3:36  
+Okay, perfect. Perfect. Yeah, we'll just, we'll give it a couple more minutes. And then
+
+yeah, we'll just open it up to people to kind of questions they have and I think we'll just I mean, how much time do you think
+
+Louis Guthmann  3:58  
+I have half an hour. Okay. Yeah,
+
+EduDAO  4:01  
+we'll do that. No, we perfect timing. We're okay, awesome. Yeah, cuz a couple more minutes. Alright, I think I think we can just go ahead and get started.
+
+So I just tweeted out the space right now. But glad to have Louis here from Stark net. If you guys have any questions, basically just request to speak, if you'd like. And then we can just bring you guys up. And we'll go, we'll go for like, basically 30 minutes we'll just go from there. So maybe you can even start Lee kind of like introducing, you know, kind of what you guys are working on maybe as of late, of course, happy to kind of some of the other projects, yeah, that'd be great.
+
+Louis Guthmann  6:16  
+I'd be happy to be able to do that. So just introduce myself very briefly. So I'm Louie, the customer at Stark where I've been in crypto for over three years, six years now, I'd start with over three years and be leading the consistent advert which is everything right to education and onboarding of project in there into the ecosystem and basically convince people to that they should be building on starting them and helping them with or build for them to be successful basically. And so, you know, what, what, to give very short brief start on Stark net, what I can say is going to introduce maybe Stark net and stark where so stark, where for those with dog underwear, stuck where is zero company focus, but develop zero the technology gap is because he KPS. And you can think in a very high level about the APS as a compression algorithm for computation. Meaning you're the first person that gets the order computation, and they run it through the system, and they can compress it in such a way that you can verify it extremely efficiently. And so we are using it to we have been around for over five, almost five years now maybe five years already. And the purpose of why we use a tech is to enable skinning on ethereal. So we started by working with massive that players like the diversify, we change them to identify immutable dydx and software. And now for the last year, we have been developing Stark net, which is the permissionless version of the of our tech which enabled any death to write smart contract and create new application on top of the system and stark net is defined as layer two, which is a layer two on top of ethereal meaning it's a result of another blockchain that is exists, but its existence is only defined in relationship to Ethereum. And so what you're basically building on stock that you are building on the failure and by extension, and so this is sort of like what we have been at for the last for the last four years. And to for people to understand why this is a challenging thing that you know, we have too many blockchains out around the why is that what's resonating with you took so much time is because the KPS do not work the way your regular computer work in your computers, your computer likes bits and bytes. And the cheapest thing you can do the fastest thing you can do is what we call Boolean logic meaning do we exhort and or or over some beats and in a zekiel environment you work in a very different environment you work in an environment which is arithmetic. So, what is keeping CPUs in when computers become expensive, and what is usually expensive on CPUs become cheap. So for instance, on skincare is installed start date on on using the KP like division. addition, multiplication, subtraction are cheap operation, there is a basic operation you're going to work with. And you work with an your basic element instead of being bits. It's what you call the field element, which is magic, a big integer. And so we develop our own tech to make it efficient to compile those programmes, to the to that environment to make it efficient for the compression to happen.
+
+EduDAO  9:54  
+That's awesome. We appreciate the detail and everything like that. I can hear your Stargate or
+
+Louis Guthmann  10:12  
+could you repeat? I didn't hear you.
+
+EduDAO  10:15  
+I'm just saying, if you want we can open it up to questions. If anyone's curious kind of like the roadmap for, you know, Stargate, for example or things like that. I think people would like to hear it.
+
+Louis Guthmann  10:31  
+So, yes, so let's let's have other people ask question. Yes, for sure. Happy to
+
+Unknown Speaker  10:39  
+Hi, Louie, Carlos here. So I want to ask, what is the most significant limiting factor nowadays for CPAP research?
+
+Louis Guthmann  10:53  
+Though, what do you call limitation? What do you have in mind in terms of proving time? Like what what's what's what's what's gonna put on Nico talking about
+
+Unknown Speaker  11:02  
+AI on the computations? Proven time yeah, like every I think there are many protocols who are trying to optimise and make more efficient the proving system and also the verification system. So I want to know, like, what is the Okay, nowadays, what is the most so we can meet in factor I can insert
+
+Louis Guthmann  11:23  
+into it. So they the theory and what we see in the industry, right? So in theory, there is no good. So right now, the way the system work is that to prove something, you need to spend what we call it in terms of complexity. So I don't know if everyone is computer scientists here, but you need to spend a bit more time that you will take to run the computation. That's called N log N is quasi linear, we call it in computer science. To prove that we have a programme that runs in n step, then you need n log n step to prove it in a DKP. So and So, on the theory perspective, there is no Impossibility Theorem, that says that you cannot prove it in the same number of steps that it was to run it. So you could imagine having a protocol that can run it in O of n, which will make it quite significantly faster to run to create proofs. We don't know any of those protocols that are also succinct, meaning we don't have a protocol where proving is just as fast as running the code. And where the proof the verification is in log in login, meaning it is very, very fast. So we don't know of that. So but that nothing is federal the fury aspect. Now on the industry aspect, the actual practicality of proof today. So it really depends on the tech you're using. So in ZK P the DKP word in the industry, there is two main kind of protocols that are being used. One are Coast snarks, and the other one called Starks, Starks is what start were used snarks is what most of the industry use the commerce trade offs. But the biggest trade off and the reason Stark ware did not take snark approach is because the proving on snark is according to our calculation, roughly 20 times slower than running on stocks, I can give you an exact technical explanation why, but I wouldn't keep it for now, if you asked me after, I'd be happy to explain. But so stocks are much faster to prove. And the thing is that what comes when you are much faster to prove is that it's not only like just changing computation that you need to do is actually also changing nature. Because when you are 20 times faster, that only you can prove more things, you can also prove different things that are not realistic before. And so this is why you know, Stark were developed this, this language is called Kyros is full VM, because no one didn't start noticing capacity because it will be too slow and start. So if you ask me, what the bottleneck right now, when it comes to proof is that he's muted. The front start front, there is the question of spinning up computation, and people are looking into hardware acceleration to do so. On the Start front, this problem is less pregnant, so we're not really looking into other acceleration developments. But instead of looking at things like recursive proofs that are enabling us to paralyse and create proofs that are much faster to manipulate much faster to create to generate threads through variation. So let's get to where all of this comes from. The answer your question
+
+Unknown Speaker  15:01  
+Yes. I have just you mentioned now just now about about pyro. And just to mention that a stagnant is one of I mean, started has its own language, which is which is chiral. So it's not CP VM, like many other secret rollers out there. So I want to ask a question related to this because our topic today was why you should pay attention to start med. And I want to ask now, nowadays, there are different secret robots like scroll polygon they're releasing, and I want to know if it's Gartner is in its directly competing with those secret rollouts, or do you think like, because starting as Cairo, they are not on the same run with tkv. And
+
+Louis Guthmann  15:46  
+so the thing is, is we built just a second noise. So the thing is, I mean, first of all, we have very good relationship with odo seem right, like the matter, scroll and Aramis, none of those guys. So, the competition, the thing is, the truth is, I don't really compare myself to we don't really compare ourselves to them. Because we all know if you're on base and Ally zero, what I'm because the reason is, because first of all, to this document is the first and only one the only one that is in production that you can actually develop right now that is, you know, very actively available. But the other reason is because the when were we fighting over or what we care about is there's mainspace Develop builders mindspace and so the pool is wide enough of DEV to basically convert them to explain to them what the tech does, what you can do and so on. That we don't really step on each other's foot. We were not looking at the very same devs or if we are I never felt it and so of course I think that stark net is the best because I'm very very unbiased. But I do not try to pull people away from the guessing or from score zero the only thing that right now we have a playing field because they are the only one that is main net we've like a very similar the deadline about being production ready is started but you know when tomorrow will be different we see
+
+Unknown Speaker  17:37  
+amazing amazing Laterano
+
+EduDAO  17:41  
+teach you right?
+
+Unknown Speaker  17:43  
+Yeah, see teach one as radio sound.
+
+Unknown Speaker  17:46  
+Yeah. Hi. Hi, Louie. I'm chi nice to be ragging. Karloff. Oh, can you guys hear me? Yep. Again, in perfectly fine.
+
+Unknown Speaker  17:56  
+Okay. Yeah. I got a question. So why should we pay to just talking about and I know that Santa has had it has, it's now very centralised, like I need any what are the current plans to make a decision? I know like that people are in talks. I mean, they're like current plans to make it decentralised. So what are the current strategies and what is the roadmap to decentralisation something that is very important to pay attention to stagnant?
+
+Louis Guthmann  18:24  
+It's an inventory. I mean, this transition is a fundamental step. And, you know, we especially see recently we OFAC kind of sanctions that we don't like being centralised as a liability, like we don't want to be in control of the network, right? So it's truly something we don't want. And so what is the roadmap? It's a very The question goes in to two step three step. So right as Darknets is on the net, with a bridge you can deposit if your CCW etc, and others NDI to start nets on Main net. But this version is an alpha. And they have a couple of infrastructure problem with this alpha which I can expand a tiny bit. And so we are going to have what we call a Regenesis. Buy I think this cute like March January or December January I don't exactly know the date thing is January. And Genesis redundancies is basically starting a new network. We the newest version, which will remove a lot of dead code and a lot of the things that are not working was words that just like no fields were there because we were iterating fast but we shouldn't be there anymore. And alongside with Genesis, we have this new version of Cairo which our language which has which will be an extended version, providing more features which are fundamental for success of the network. So right now something that started cannot do, which is not something that we want is how do we handle a failed transaction. So today when you use Aetherium as a transaction revert, because you know, you, you, you you're the price on new smart move and your transaction you've rejected and you pay for the transaction right? And I'm sorry that you cannot do that today on a stock that I cannot make prove or get paid for transaction that failed. Why is because the way the system works today is either prove that something is correct, or it cannot prove it. So if you ask me prove it, something failed. I cannot make it by definition however it is working today. So this new Cairo, one called car enables us to have this notion of failure. And it also enabled us to have things like forced to actually enable us to ever turn
+
+
