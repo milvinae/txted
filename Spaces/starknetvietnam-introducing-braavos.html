@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title>StarkNet Vietnam StarkNet Ecosystem Deep Dive: Introducing Braavos</title>
+	<meta name="generator" content="LibreOffice 7.3.5.2 (Linux)"/>
+	<meta name="created" content="00:00:00"/>
+	<meta name="changed" content="2022-09-19T13:34:23.724778933"/>
+	<style type="text/css">
+		@page { size: 21cm 29.7cm; margin: 2cm }
+		p { color: #000000; line-height: 115%; text-align: left; orphans: 0; widows: 0; margin-bottom: 0.25cm; direction: ltr; background: transparent }
+		p.western { font-family: "Liberation Serif", serif; font-size: 12pt; so-language: en-GB }
+		p.cjk { font-family: "Noto Serif CJK SC"; font-size: 12pt; so-language: zh-CN }
+		p.ctl { font-family: "Lohit Devanagari"; font-size: 12pt; so-language: hi-IN }
+		h1 { color: #000000; text-align: left; orphans: 0; widows: 0; margin-bottom: 0.21cm; direction: ltr; background: transparent; page-break-after: avoid }
+		h1.western { font-family: "Liberation Sans", serif; font-size: 18pt; so-language: en-GB; font-weight: bold }
+		h1.cjk { font-family: "Noto Sans CJK SC"; font-size: 18pt; so-language: zh-CN; font-weight: bold }
+		h1.ctl { font-family: "Lohit Devanagari"; font-size: 18pt; so-language: hi-IN; font-weight: bold }
+		a:link { color: #000080; so-language: zxx; text-decoration: underline }
+	</style>
+</head>
+<body lang="en-GB" text="#000000" link="#000080" vlink="#800000" dir="ltr"><h1 class="western">
+<font face="Arial, sans-serif"><span style="font-variant: normal"><font color="#000000"><font size="6" style="font-size: 23pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b>StarkNet
+Vietnam </b></span></span></font></font></span><span style="font-variant: normal"><font color="#000000"><font size="6" style="font-size: 23pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b>StarkNet
+Ecosystem Deep Dive: Introducing Braavos</b></span></span></font></font></span></font></h1>
+<p class="western" align="left" style="line-height: 115%"><br/>
+<br/>
+
+</p>
+<p class="western" align="left" style="line-height: 115%"><font face="Arial, sans-serif"><b>Twitter
+Link</b></font><font face="Arial, sans-serif">
+-&nbsp;</font><font color="#000080"><span lang="zxx"><u><font face="Arial, sans-serif">https://twitter.com/myBraavos/status/1571487394360172544</font></u></span></font></p>
+<p class="western" align="left" style="line-height: 115%"><br/>
+<br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">StarkNet
+Vietnam Community  3:17  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Hey
+guys, what's you're sweating for Marty and Bertrand Jr. to join our
+space. So just a couple of minutes Hey, watching Hayward Hello, hey,
+hey, how are you?</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Bertrand
+Blancheton  3:59  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Good,
+coach. Happy to be with you today.</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">StarkNet
+Vietnam Community  4:03  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Yeah,
+okay, so we're just waiting for Monday.</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Bertrand
+Blancheton  4:07  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">All
+right, right now.</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">StarkNet
+Vietnam Community  4:11  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Okay,
+cool. Guys, we'll just give it a couple of minutes for everybody to
+join and then we'll get started</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Hi
+Hello money can you pay money? Can you speak? just tried to make?
+Yeah, I'm here. Hi. Okay. Hi. Okay, so we just give it a couple of
+minutes for everybody to join our space. How are you today?</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Monty
+Lavie  5:26  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Sure.
+I am great. Thank you. Thank you for doing that. Over the weekend.
+It's a pleasure.</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">StarkNet
+Vietnam Community  5:35  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Yes,
+yes, of course. Okay, I can see many people have already chosen to
+add space. So, yeah, I think we're good to go. Yeah. Are you guys
+ready? Yeah. Okay. Sure, right. Okay. Hello, everyone, and welcome to
+the starting at Vietnam spaces. My name is Levi, an admin of the
+standard Vietnam team. And today we have Marty and Burton. Join us to
+talk about their exciting project problems. Hey, Marty, and Burton,
+can you say hi to our community?</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Monty
+Lavie  6:13  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Yes,
+thank you. Hi, Vietnamese community. Very glad to join you here. And
+I hope it will be interesting.</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Bertrand
+Blancheton  6:32  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Hey,
+hold same, really happy to be with you. And to discuss how stagnate
+the Stuxnet ecosystem in Vietnam developed and be to, to dismiss
+that. Thank you.</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">StarkNet
+Vietnam Community  6:46  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Awesome,
+awesome. Glad to have you guys here. And thank you so much for
+joining us. I'm super excited to do this ama with you guys today. And
+I'm sure that our community members are excited too. So back to the
+AMA. There are two parts that we're going to do. And the first part,
+I'm going to ask our guest speakers some questions that I had
+prepared beforehand, followed by the second part, which is a q&amp;a
+session, where our community members are open to ask us anything. You
+guys can comment the questions down below right now, on the comment
+section on Twitter space, or maybe just later, just go straight ahead
+and request to speak. And after this AMA, we will choose five winners
+of our giveaway. And those winners will split $200 award. Bert and
+Molly, are you ready to start? Yes.</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Bertrand
+Blancheton  7:40  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Ready
+to start?</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">StarkNet
+Vietnam Community  7:41  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Okay,
+wonderful. Okay, so to kick things off, can you guys tell us a little
+bit about yourself, your maybe your background and how you started
+with Bravo's and also can you do a little introduction about the team
+behind Bravo's?</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Monty
+Lavie  7:57  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Sure.
+So my background is computer science engineering. I was what you can
+call for my entire professional career almost for my entire
+professional career and web to entrepreneur and came into crypto
+relatively late like a year and a half ago. And but was fortunate
+enough to have the time to you know really dive in and understand
+that technology in depth understand the various L one solutions that
+exist out there and decided that Aetherium has the best chance to to
+be the most dominant chain going forward. But as Aetherium has a
+scalability problem. It needs a scaling solution. And then study the
+all the possible scaling solution, whether it's side chains,
+optimistic roll ups, z k roll ups, and in that study, came across
+stock net was amazed by stocking technology. And I decided to start
+building on staff it together with with my team with my with my co
+founders. Which we as an anecdote, I can say that we know each other
+I think for almost 14 years now. We've worked together in in previous
+companies in previous ventures. So at least the founding team of
+Bravo's has a very long history. And now we have belt also that came
+into the team and we were happy to have him with us. And both maybe
+before I continue a Bessa I sit down to you to introduce yourself.</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Bertrand
+Blancheton  10:03  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Thank
+you for the introduction. So I have a totally different background
+because I come from the business side, basically, mainly marketing
+marketing in web two, I work on a lot of SAS project before, so lots
+of digital marketing. But it was about like one and a half years ago,
+I started to be really interesting with the community aspect of
+marketing. So all this community led approach and obviously, the fact
+that it was interesting with this topic, bring me to the concept of
+web three, where I started to discover you know, different projects.
+So I was already a crypto enthusiast, but I never made you know, the
+link between my job and the crypto, but understanding that old most
+of projects in crypto and web three need to be drilled with a
+community approach. I dive deeper and I work on my first project get
+some experience and few months ago I met I met Moti we discuss
+Bravo's projects, this technology but of course division, which is
+really important for me when we when we talk when we have to build a
+community and we agree on the vision the way we should we should
+drive the growth for Braavos through the community. So I joined the
+project about less than two months ago now. And and the project is of
+course to to employ or community led approach for Bravo's</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">StarkNet
+Vietnam Community  11:41  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">one.
+Wonderful, wonderful that was an amazing introduction and a some
+interesting backstory there and well. We are glad to get to see that
+what you guys and your awesome team have been working on Bravo's
+wallet. It's a great work. Thank you. So so now let's dive deeper.
+Let's talk about Bravo's and I believe most of the people that are
+joining us joining us right now had already used Bravo's wallet or at
+least heard about Bravo's before. So Bachchan, can you just briefly
+introduce Bravo's and some key features of Bravo's</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Bertrand
+Blancheton  12:22  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">so
+I will let Moti doing that because he's definitively the right guy
+for it.</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">StarkNet
+Vietnam Community  12:28  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Of
+course, of course.</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Monty
+Lavie  12:30  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Okay,
+no problem. So, you know, maybe I will take it a step back and
+describe what, what brought us to develop Bravo's because you know
+there are like gazillion wallets out there. So why do we need yet
+another wallet? And I think that the answer to that is that the
+wallet experience in crypto is still not as good as we want it to be.
+And I think one of the you know, one of the amazing evidence for that
+is that even people who are in crypto today, the let's call them the
+early adopters, the let's say 200 300 millions that already uses
+crypto, the vast majority of them like 80 90% are using crypto in
+centralised solutions, centralised solutions like by Nance like
+Coinbase like Kraken like sells us or at least used to use Celsius.
+And you know, you cannot blame users for using centralised solutions,
+because they give a much better experience than decentralised
+solutions. And then the self custodial wallets that that we all know
+they give it a an experience that is much closer to a web to
+experience that, that people are used to with when using the everyday
+apps. And in self custodial wallets self custodial solutions are
+complex, they have all these you know, scary words like private keys
+and seek phrases. And the cost of error is is significantly high. And
+the the chance that ever will happen is also high because you you
+deal with all sorts of numbers, long strings of numbers and
+characters that normal users should not deal with. And, and you know,
+for us that was part of the core thing that brought us to to develop
+browsers because we saw it on Stark net. With smart contract based
+wallets and with very low gas fees. And with the advancing zero
+knowledge proofs, we can take the user experience To lift it up and
+bring it to the level that users expect, the level that they get
+today from web to solution. And by debt will help move users from web
+to end centralised crypto, which is not really crypto into the
+decentralised world and self custodial solutions. So that's, that's
+like our reason that play if you like, the reason of existence, of
+why brothers now in brothers, in the past few months, we, we, we
+start tying in, in doing what we what I call the bread and butter, so
+everything that even the most basic wallet need. And we did, I think,
+a bit more than that. So we have mobile versions that you can find in
+the Android store and the iOS store. And we have browser versions
+that you can find in all the popular browsers, Chrome, brave Firefox
+edge, and so forth. And the wallet features itself then, of course,
+it has all the basics of holding your tokens and transferring and
+showing your, your balance and so forth. But it also has a built in
+capability to show your NF T's whether it's images, audio video,
+already inside a wallet, it has an internal exchange to swap tokens.
+So if you want to swap your eat to other tokens or bat, you can do
+that right within the wallet, you don't need to go out to another
+solution. Of course, there is a link to onramp to easily on ramp
+either from other exchanges, or from a elwen or from other networks,
+or from credit card, or Apple pay directly to your boss wallet on on
+stock. So all of this and more is already done. It's already behind
+us. And now we are looking forward and are implementing these days,
+the cool features of smart contract based wallets and account
+abstractions that we can dive into if you like.</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">StarkNet
+Vietnam Community  17:25  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Awesome,
+awesome. I love it. I think, buddy, he has covered pretty much all
+the features of Bravo's and so you you just mentioned that Braavos is
+a smart contract based wallet. Can you tell us some differences
+between a smart contract wallet with other kinds of wallets out
+there?</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Monty
+Lavie  17:46  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Yes.
+So that relates to what I previously say the fact that there are
+already good singing wallets and who needs another wallet. And the
+thing is that the fact that smart contract based wallet can really
+help us in improving the user experience. And maybe let's get a few
+examples to demonstrate what we mean by saying creating a much better
+user experience. So we will start with the like with the simple
+things and then maybe move on to more advanced things. So one of the
+things maybe first to explain what is a smart contract based Wallet.
+So unlike the meta mask of the world, which is only a client side,
+what everything happens on the client side, and you signed
+transactions on the client side and send them to the blockchain. A
+smart contract based wallet has a manifestation there is like a part
+of your wallet exist as a smart contract on chain. So you have the
+client side, which is the application or the browser extension. And
+you have the smart contract side which actually resides on the
+blockchain. And each and every of your transactions, the transactions
+that you sign on the wallet on the client side, they go through your
+smart contract that represent your account on the blockchain. And
+from that, it goes through the different protocols and the different
+decentralised apps that you want to communicate. Now the fact that we
+have this smart contract on chain that represents your account gives
+us an enormous power and open a wide space of things that we can do
+in order to improve the UX and let me give a few examples. So one is
+a multi operation multicol So if you are familiar with traditional
+wallets on Aetherium. Let's say when you interact with certain
+protocol and a certain token, you first need to approve that okay,
+and then you can and only then you can transfer token, or do some
+interaction with a token. And usually this approved that the the
+protocol that adapt that you interact with request is an unlimited
+amount, meaning you give this this protocol this DAP, you give
+unlimited access to your fund. And you you're, you hope that there
+won't be any bug and that the the protocol we withdraw from your your
+account only the the amount needed for the operation. But, but in
+fact you give it an unlimited like an open check and unlimited
+capability to redraw all the funds in your account. And that's of
+course a very bad uniques. And there were a few hacks in the past
+that utilise that. And with smart contract based wallet, we don't
+need to do that because we can couple this approve and the actual
+execution, the extra transaction with the wallet, all in the same a
+transaction that is being verified on the smart contract which is
+which is on chain. So if I want to do a swap, I don't need to approve
+an unlimited amount and then go to the swap, I can wait one
+transaction approve only the exact amount that I want to swap and the
+swap transaction itself. So that's one example of one very simple
+example why smart contract based wallets are better. But there are of
+course, much more, maybe it will give a couple of more, just to make
+it a bit a bit clearer. So it the second example, which I really like
+is what we call account segmentation. Meaning I can define</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">various
+types of accounts. Let's say I wanted to find a checking account and
+I wanted to find a savings accounts. And in my checking accounts, I
+want to be able to send transactions quickly with let's say, with no
+time delay, but with the daily withdrawal limit. Like think of that
+like your your your ATM card. So you cannot empty your entire bank
+account with with the ATA ATM card, there is some some sorts of
+limit. And that's a good thing. Because if my my ATM card gets lost,
+then I know that maybe the thief can steal from you, but they cannot
+empty my entire account. And so that's one thing. But on the other
+thing, maybe I had a savings account, which I have more money there.
+And in that case, it's not important to me, you know, to to be able
+to transact very, very quickly and withdraw the money or transfer the
+money with a split of a second. But it is important for me very
+important for me that it will be secure. So on my savings account, I
+can set no withdrawal limits. But I can set a time delay, let's say
+that I need to re approve the the transaction again, like 24 or 48
+hours after I made it in order to in order for that to to actually go
+through and descent on the on the blockchain. And that feature, which
+is for me, I think it's very, it's very useful because I want that my
+huddling account, my holding crypto will be as secure as possible.
+Unlike the the maybe the the small, change the checking accounts that
+should be more active. And that leads us to the fact that we have a
+smart contract on chain that can verify multiple signatures. So I can
+have a built in mechanism of two factor authentication. Like we know
+from the web to wall, for example. When I want to login to a certain
+service, then it's not enough that I enter my password. I need to
+authenticate myself in an additional way. And again, the fact that we
+have smart contract based wallet on the blockchain allows us to do
+such things.</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">StarkNet
+Vietnam Community  24:15  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Awesome,
+awesome. Well, I think that was a great answer. I very detailed and
+yeah, and I appreciate that. Yeah. So can I can I so I have been
+hearing a lot about a count abstraction lately. And you guys are
+building problems based on this idea. So could you just just explain
+to those of us who, who don't actually understand what a can
+abstraction is, you know, just in simple words, and what does it mean
+when you apply this kind of technology into problems?</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Monty
+Lavie  24:51  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">So
+what I've just been describing in the past few minutes is exactly
+account obstruction. So you can think of account obstruction as a
+synonym to Who to smart contract based wallet, the fact that I take
+your account, which is let's say in meta mask wallet, it's only in
+the client side. And I put it on chain. And I create an abstraction
+of your account. And as we said earlier, everything all transaction
+that comes from the client site go to this account. And this account
+can in this contract the smart contract, which represent my account
+can run an arbitrary logic. And this is the the actual what is called
+account obstruction and EIP for creepy seven. And that was was, was
+published a while ago. So when everyone when when you hear people say
+account obstruction, what they really mean is a smart, contract based
+wallet, that all transaction goes through the network to the smart
+contract that represent your account.</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">StarkNet
+Vietnam Community  26:04  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Okay,
+nice. Yeah, that's a very easy to understand. And I think our
+community and was a really appreciate, appreciate your answer. Thank
+you, Martin, for keep it simple. Yeah. So the next question for you
+guys. Is that what critical problems does Bravo's solve that existing
+solutions are not solving? And how do you distinguish problems from
+other wallets out there on the market?</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Monty
+Lavie  26:31  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Bert,
+do you want to take it out? Or should I take it?</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Bertrand
+Blancheton  26:37  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">I
+can take it for part like user point of view if you want. And on the
+technical part. I literally live on companies I say when? Yeah,
+sorry. Okay, let's go. When I joined as a project, you know, a big
+discussion we got with Marty's like, we want to make this project
+Bravo's wallet really accessible for everyone. So it's mean, we
+understand that today we face community, which is like crypto fiends
+understand defies understand most of the tech, but we still you know,
+is a con segmentations everything from education to do and so on. But
+the fact is, I really in the discussion, what I really enjoyed about
+the project as a project was all the parts of of the roadmap, we
+wanted to make the product really simple for new crypto affine. You
+know, like the next wave of people, we're gonna we're gonna join us
+on the defy journey. And for me, it was the big work I saw done by
+the tech team in the last weeks and last month is the UX. It's, we
+got a lot of positive feedback on that people really enjoy because
+it's simple. Of course, the technologies that Moti just described
+with account abstraction, the multi core and so on will help as well,
+you know, to make the UX and CX even better. So that was that this
+is, I believe, a big advantage from from Bravo's. The second point is
+we are the only mobile native app, which makes, again, which
+simplify, you know, the whole experience of defy via Bravo's, because
+you do all your transaction, strong transaction from your desktop,
+but then, you know, you can control and do like simple transaction
+from your mobile. So I think it's really really important. This last
+point is about all the securities that the fact that we are so is the
+fact that we are smart contract based, bring a lot of security
+aspect, not only, you know, the technical parts, security, which is
+developed, you know, in the in the backend, I mean, for people to
+manage, as Multijet explain, you know, how much value or value of
+your asset can be transferred in once and so on. I think this is
+really important to give confidence for new user. And I think this is
+something which makes us be different that I mean, clearly different
+from what you have on the on the market.</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Monty
+Lavie  29:08  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Maybe
+just to I think it's a great summary. And just to add another point
+to that. We, as a conscious decision, decided to work solely on stock
+next. We believe that l twos are the future of Ethereum and in the L
+two realms. We believe that stock that has the most solid technology
+and the most promising technology to take to take Aetherium and scale
+it to hundreds of 1000s of transactions per second and really bring
+the industry to where we think it should be. And that's that's our
+sole focus. We are not working on other networks. And we are not
+trying to cover the entire flip. to space, the focus is to bring the
+best solution possible to start with.</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">StarkNet
+Vietnam Community  30:09  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Wonderful
+one. So, the next question, can you update Bravo's progress to our
+community, like what have your team achieved so far, and what goals
+that you guys wish to accomplish in the near future, like for the
+rest of 2022, and maybe in 2023.</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Monty
+Lavie  30:30  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">So
+I think I touched upon that a bit earlier. But maybe just to
+summarise, I think that what we've done up until now is, as I said,
+the bread and butter of having a wallet. So we have the wallet on all
+platforms, iOS, Android browser extension, we have all the basic
+functionality and features of offer wallet, like a transfer and
+showing your balance and creating accounts and the whole year nfts.
+And as I mentioned, also exchange within the wallet, and we added a
+transaction capability. So users will understand the transactions
+that they are signing on and wouldn't be like a Meaningless,
+meaningless, random numbers and letters. But I consider all that as
+the bread and butter and now focuses on taking the advantage of a
+smart contract on chain, and really implementing the increased
+security with two factor authentication. And the different account
+types as I described earlier with with account segmentation, and
+allow different signature schemes, and that will, that will help
+users manage and secure their funds better. And many, many such
+features that not all I can show today that are expected to be
+deployed in the in the next few weeks and months.</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">StarkNet
+Vietnam Community  32:15  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Okay,
+cool. Nice. Thank you for sharing those. I think that's what our
+community really wants to hear what what are you doing? What's your
+plans? And what your ideas for the future? And we're looking forward
+to those happening soon? Yes. So the next question, and this is also
+the last question from me to you guys. What partnerships between
+Bravo's and other projects on stock net? Can we expect in 2022? And
+could you give us some examples of how other projects can leverage?</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Monty
+Lavie  32:50  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Okay,
+so I think that we, you know, as I said earlier, is we are solely
+focused on stock and if we try to work closely with, with all or at
+least most of the protocols in, in, in, in the ecosystem. So, of
+course, we have a very solid partnership with Stuxnet itself, in
+order to continue and push the network, from alpha to beta, from the
+current state to Regenesis. Have a have the stock network, and let's
+call it a full production network. So that's, that's, of course one.
+There are the market, the NFT marketplaces that we already cooperate
+with, and they are already accessible from from the wallet. And there
+are game developers that are working on on stack net that still not
+in full production, but once they they will be in full production,
+they will be integrated into the wallet. So the user will have like a
+one click kind of experience. Certainly if it's if it's on mobile,
+which currently placed Braavos is the only way to access stuff on
+mobile using the Bravo's native application for Android and in iOS.
+There are more protocols to come there is ens DNS like domain names
+that don't coming to start now that will be integrated into the
+wallet and and we already integrated with with defy using using the
+Microsoft Exchange and we are planning to do integrate and cooperate
+with modify protocols and bring them into the wallet. So the users
+will will be able to, to have a one click earn yield a one click swap
+with the best rate, and everything will actually be with, with a one
+click or one tap distance on the Bravo's wallet.</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">StarkNet
+Vietnam Community  35:27  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Great,
+that's fantastic. Well, we definitely need to be on the lookout for
+all the news that is coming soon. And I can't wait to see that
+happens. Thanks for the useful information that you just shared with
+us. So that was my last question to you. We're gonna move on to the
+second part of this. Ama answering some questions from the community.
+So I can see a lot of questions from in the comment section. Guys,
+can can you see the comment section? On Twitter? What looks like Yes.
+Yeah, I see. Yeah. Well, looks like the community is quite active
+today. Okay, a lot of questions. So I guess. Do you do you guys want
+to pick the pick the question, or I'm gonna, I'm gonna read it to
+you.</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Monty
+Lavie  36:26  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Feel
+free to read so everyone else will know what what we are talking
+about? And we can answer.</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">StarkNet
+Vietnam Community  36:32  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Okay,
+cool. Okay, so. Okay, um, so the first question, can you indicate a
+feature or features that you like best about Bravo's so that it can
+compete with other competitors? And what is the thing that you are
+most confident about your product?</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Monty
+Lavie  36:52  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Hmm,
+that's a great question. I think that one thing that, that I at
+least, like very much is the transaction, explainer. The fact that
+when when I came into crypto and I got lots of like, popups, in the
+wallet that asked me to sign transaction, you know, I didn't really
+understand what I'm signing on. So I tried to read what it said. But
+in most part, it was, it was a bit gibberish. And you know, I have
+like a technical background. But you cannot really understand sending
+this and that to that. And that address. You don't really know what
+happens behind the scene, and we did a transaction, explain how users
+really understand what they are saying, you know, so for example,
+when it's protocol X asks them to give an unlimited access to their
+tokens, they say, Hey, wait a minute, I don't want to give unlimited
+access to my tokens. And before our transaction explain now, they
+wouldn't know that because it was like hidden in various strings and
+numbers without plain English and saying this protocol wants to get
+unlimited access to your tokens. And so, so that's one thing that
+that I really like. And I think it's really useful. And, of course,
+we constantly continue to work on that and improve that. And I think
+that in terms of going forward, so the features of a smart contract
+based wallet, and that improve both the UX and security, these are
+the things that the time was exciting about excited about the ability
+to do biometric two factor authentication, without the need of
+additional hardware. When you're using when you're using your mobile
+device. These are things that that for me, really, you know, really
+get me excited. And as I mentioned, we have a few more interesting
+things that we will expose. A bit further down the line in the in the
+future. So definitely, there is stuff to look forward to.</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">StarkNet
+Vietnam Community  39:20  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Okay,
+cool. Thank you. So the next question is, is there a, is there any
+security risks in smart contract of the wallet? Body? So I guess the
+question is that have you ever audited, Bravo's smart contract with
+any external parties?</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Monty
+Lavie  39:43  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">So
+not yet. The reason is twofold. One is since we, as you as you've
+just heard, we are still in the midst of development, and are still
+core functionality or what we consider core functionality that we
+want to that we want to add to the wallet. In order for that to be
+primetime ready and ready for, at least call it version 1.0. of
+auditing. So that's one thing. And the second thing is that stock net
+is a whole, the network as a whole has not been audited, it's still
+in alpha, it's still under development, it seems, needs to do the
+Regenesis process, which is which is a huge and very significant and
+important process. And it makes much less sense to perform the audit
+before starting to go to Regenesis. And before what is called chi or
+wind point, oh, Kira is the is a programming language that we use to
+write smart contract on Stuxnet. So before chi will move from the
+current version to hywind ponto. That is going to change quite quite
+a few things, both in terms of syntax, but also under the hood and in
+the virtual machine itself, that the trans the blockchain. So it's,
+you know, it's much more advisable to perform the audit after the
+Regenesis.</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">StarkNet
+Vietnam Community  41:16  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Nice,
+okay, that was a great answer. Yeah.</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Monty
+Lavie  41:20  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">But
+it is important for me to, to emphasise audit or no, no audit. You
+know, I constantly joke that we are a team that is relatively new to
+crypto. But we are kind of veterans on Stuxnet. Because we've been
+working on Stuxnet for over a year now and actually promises the
+second protocol that we have launched. So we have quite the
+experience on stock. And we have quite the experience with Kira,
+probably not less, if not, if not more than many people out there.
+And taking into account this and the fact that we rigorously tests,
+both the client side of the wallet and the contract side, then we
+take security very seriously. Even before audits and even before
+Regenesis. Naturally, we understand that we deal with people's funds,
+people money, and we take a great deal in order to make sure it is
+safe.</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">StarkNet
+Vietnam Community  42:33  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Okay,
+thank you. So the next question, are what is Bravo's goal in terms of
+monthly active users in the short time?</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Monty
+Lavie  42:48  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Well,
+it's it's hard to say the short term is always hard to say and always
+hard to predict it you know, has it outside influence like the state
+of the entire crypto market and maybe even the state of the stock
+development itself? So very hard to predict the short term, but for
+the long term as I said earlier, we focused solely on target and we
+want to be the main gateway to onboard people on on stock net, so we
+are talking next year and hundreds of 1000s of users and after that
+in much higher numbers as the network will thrive.</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">StarkNet
+Vietnam Community  43:50  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Okay,
+cool. So we have a request. Hello. Okay. Hello,</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Monty
+Lavie  44:05  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">hello.
+Yes, sorry. Did you hear my answer? Did we?</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">StarkNet
+Vietnam Community  44:09  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Yes,
+yes. No. Yes, yes. Hey see food doula. I don't know how to pronounce
+your name. Can you try the mic? i We have a member that wants to ask
+a live question</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Okay,
+so so I'm gonna I'm gonna switch to the questions on the comments
+section. So what is your view about crypto wallets in the future?</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Monty
+Lavie  44:51  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Oh,
+so I think that's that's another great question. I think that crypto
+wallets all crypto wallets in the future will be smart contract based
+wallet, because simply they enable a much greater experience and much
+better security. I think this is one of the most underestimated kind
+of jam in the in the crypto industry and, and going forward moving
+like two or three years into the future, we will see that the vast
+majority of wallets will will either be smart contract based wallet
+or make the transition to be smart, contract based wallet. Okay. And
+maybe to maybe to expand a bit on that. And I think that in terms of,
+of users, mass adoption of users, we need to bring as many services
+as possible into the wallet itself in order to make users life easier
+and simpler, and not requiring them to be familiar with the different
+depths and the different risks and rewards and make the entire
+experience much more simpler, much.</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Much
+simpler, much, much more streamlined. And I believe this will be
+flywheel that can help bring more and more users into into the field.</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">StarkNet
+Vietnam Community  46:34  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Okay,
+cool. So I see another question. Another good question. Then. The
+native standard bridge start gate support only automax wallet for
+transactions to our to when will the Bravo's wallet be integrated
+into the stock a and what other preachers can use a chest for
+advantage use for a one hour tube bridging? And could this feature be
+integrated in Bravo's UI UX?</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Bertrand
+Blancheton  47:04  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Yeah
+really good question. I saw it and feel Morty want to do and well
+that.</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Monty
+Lavie  47:10  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Yeah,
+so So first of all, Bravo's is supported by Stargate Stargate is one
+of the first daps to support browsers from day one. So if you go to
+Stargate, with your brothers wallet extension installed, and you can
+easily connect to that and quickly and smoothly transfer funds. You
+can do that either by going to Stargate directly from your browser or
+clicking on the Stargate link within the browser extension. If you
+open the extension, you can click deposits and you see the various
+way that you can bring funds into the wallet and Stargate is one of
+them. Other options is to use obiter obiter is another bridge that
+allows to breach funds from various networks, whether it's
+centralised network or other l ones that use directly to your
+brother's wallet. You can also deposit money from credit card using
+banks app. You can also use Apple Pay and deposit money directly. And
+I believe that in the next couple of weeks, we will introduce another
+yet another mechanism that will allow you to bring funds to to your
+Bravo's Wallet. So most definitely Stargate support Bravo's if there
+is any issue, then please, please write to us either on our Discord
+or on Twitter and we will be happy to assist and supporting in using
+Stargate to to onramp funds on to grab us.</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">StarkNet
+Vietnam Community  49:12  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Thank
+you. Awesome. So the next question, and I think this is gonna be the
+last question. How important is the community to you? And how can we
+help you to grow your project? Board? Can you do you want to take
+this one?</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Bertrand
+Blancheton  49:29  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Sure.
+And with pleasure. Always on pot on the community for us. Huge. It's,
+I mean, actually, I thought I joined the project, this project
+barbels because because of this aspect during our discussion with
+Mati he always you know, bring me a vision and how we can like
+leverage the community on the good aspect of it. It's been really
+getting the feedback getting the sense I was can drive the Part of
+our innovation and so on. So, we are not looking for a huge community
+on numbers. We are looking for community and quality. So how do we
+translate that first is like working with project like you guys being
+close to you getting the feedback from the ecosystem from the project
+MCO we can help you to evangelise good tech people coming on our
+ecosystem as well.</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">StarkNet
+Vietnam Community  50:31  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Yes.
+So do you guys have any local communities around the world right now?</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Bertrand
+Blancheton  50:41  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Not
+yet. We are we centralised community in our Discord for the moment
+everything is online, we haven't done much activity on the suspect.
+It will come of course, because it's my it's my duty. So I have a lot
+of things to sort out first on top of marketing, creating the right
+content for you to know how we will organise our interaction and so
+on. So but you will see like lots of activity from outside very soon
+on this aspect. So first, if you want to join the community is
+definitively our Discord. Of course Twitter to get in touch getting
+less news and so on. And little by little we will develop what we
+call micro local community approach. But this will take few weeks,
+but before we start the programme.</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">StarkNet
+Vietnam Community  51:35  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Okay,
+thank you. So well, there are still a lot of questions from the
+community. But we're running out of time. It's almost 50 minutes. So
+we're going to have to wrap things up by now. Bert and Marty, thank
+you for taking the time to be here with us. I had a very good time
+talking with you guys today. And I wish you all the best. And I'm
+looking forward to G Bravo success in the future.</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Monty
+Lavie  52:02  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Thank
+you very much. It was a pleasure.</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">StarkNet
+Vietnam Community  52:06  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Yes,
+awesome. And guys, we hope that you got to learn a lot more about
+Bravo today. And also, if you haven't already, make sure to go and
+check out Bravo street get the latest news about the project. I think
+you guys fought a lot of good questions today. The list of winners
+who asked the best questions will be announced later on Twitter
+channel of Bravo's and starting at Vietnam community. And with this,
+we conclude this ama again, thank you, Bert and Marty for being here
+with us. Thank you guys for tuning in. It's been an awesome ama
+session and I'm looking forward to all the great things which are
+coming our way in 2022 and beyond. And I hope to see you guys soon.
+Bye. Bye bye. Bye. Bye bye.</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Monty
+Lavie  52:51  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Bye.
+Bye, everyone.</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Bertrand
+Blancheton  52:53  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Some
+of you are still some question just popping in our Discord. I see
+some of you have already continued the discussion. So discussion.
+Just feel free to come and I am available to answer the question and
+Moochie as well. John, guys, thank you.</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Monty
+Lavie  53:09  </font>
+</p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><font face="Arial, sans-serif">Bye
+bye</font></p>
+<p class="western" style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+</body>
+</html>
